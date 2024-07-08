@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Buttons */
+
+.btn {
+  @apply text-gray-50 text-sm uppercase tracking-wider flex justify-center items-center w-max px-5 py-2 rounded-sm;
+  outline: 0px dashed rgba(255, 255, 255, .25);
+  outline-offset: -5px;
+  white-space: nowrap !important;
+}
+
+.side-btn {
+  @apply bg-gray-800/70 !text-gray-200 border border-black/10 !w-full rounded-sm flex items-center justify-center py-[0.4rem];
+}
+
+.side-btn-sm {
+  @apply bg-white/40 !px-2 !py-[0px] rounded-full tracking-wider !text-xs uppercase !text-gray-800 !font-semibold !justify-start !border-0;
+}
+
+.side-btn-sm div {
+  @apply underline decoration-brand-primary/60 underline-offset-[4px];
+}
+
+ion-icon {
+  pointer-events: none !important;
+}
+
+.btn-primary {
+  @apply text-brand-primary border border-brand-primary/80;
+}
+
+/* .btn-secondary {
+  @apply text-brand-primary bg-gray-800 border border-brand-primary/30;
+} */
+
+.btn-secondary {
+  @apply bg-brand-primary text-brand-white;
+}
+
+.btn-white {
+  @apply  !bg-brand-white !text-brand-black;
+}
+
+.btn-black {
+  @apply  !text-brand-primary !bg-[#111111];
+}
+
+.btn-third {
+  @apply bg-brand-primary shadow-brand-primary/20;
+}
+
+.btn-aurora {
+  @apply text-brand-primary bg-brand-white-light text-sm;
+}
+
+.btn-black {
+  @apply text-brand-primary bg-brand-white text-sm;
+}
+
+.btn-green {
+  @apply bg-teal-600 text-white text-sm;
+}
+
+.btn-menu {
+  @apply bg-white shadow-md text-brand-primary border border-brand-primary/20;
+}
+
+/**********************************************************************************************
+  FORMS CUSTOMIZATION 
+***********************************************************************************************/
+
+select, input[type="file"], input[type="text"], input[type="date"], input[type="datetime-local"], input[type="time"], input[type="email"], input[type="password"], input[type="number"], textarea, .selectContainer {
+  @apply border border-gray-800/5 text-sm rounded-lg cursor-pointer bg-brand-white-light text-gray-800 !important;
+}
+
+select, input[type="file"], input[type="text"], input[type="date"], input[type="datetime-local"], input[type="time"], input[type="email"], input[type="password"], input[type="number"], textarea {
+  @apply inline-block px-4 py-2 w-full cursor-text !important;
+}
+
+select:focus, input[type="datetime-local"]:focus, input[type="text"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, textarea:focus, .selectContainer input:focus {
+  @apply outline-none ring-0 !important;
+}
+
+/* input[type="file"]::placeholder, input[type="datetime-local"]::placeholder, input[type="text"]::placeholder, input[type="date"]::placeholder, input[type="time"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="number"]::placeholder, .selectContainer input::placeholder { */
+
+*::placeholder {
+  font-family: inherit !important;
+  @apply text-gray-300 text-sm !important;
+}
+
+*:focus {
+  @apply outline-none ring-0 !important;
+}
+
+/* 
+  SVELTE SELECT
+  -------------
+  
+  Use shadows in the parent wrapping the select component for the effect to work.
+
+  .selectContainer > selectedItem > selection(text) 
+  .selectContainer > input 
+  .selectContainer > clearSelect
+  .selectContainer > div > .listContainer > listItem > item(text)
+
+  * shared classname : svelte-2eeumy or input field
+*/
+
+/* Dropdown list */
+
+.listItem .item {
+  @apply bg-transparent !important;
+}
+
+.listItem .item:hover {
+  @apply font-bold bg-transparent !important;
+}
+
+.listItem .item.active {
+  @apply bg-brand-primary text-white !important;
+}
+
+/* Reset */
+
+.selectContainer * {
+  @apply bg-transparent !important;
+}
+
+.listContainer {
+  @apply bg-brand-white !important;
+}
+
+.selectContainer input::placeholder {
+  font-family: inherit !important;
+  @apply text-gray-600 text-sm !important;
+}
+
+.selectContainer {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "M.A.N. - Maison D'Adoration Pour les Nations",
+  "short_name": "M.A.N. - Maison D'Adoration Pour les Nations",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#FCFCFC",
+  "background_color": "#FCFCFC",
+  "description": "Inspirer et développer une nouvelle génération de Chrétiens",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
