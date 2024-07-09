@@ -86,9 +86,9 @@
     duration-250"
 >
   <Container overflowHidden={false}>
-    <div id="inner-header" class="h-32 transition-all duration-500">
-      <div class="h-1/2 flex justify-between items-center">
-        <a class="flex items-center text-4xl h-font" href="/#home">
+    <div id="inner-header" class="h-16 sm:h-32 transition-all duration-500">
+      <div class="h-1/2 hidden sm:flex justify-between items-center">
+        <a class="flex items-center text-3xl sm:text-4xl h-font" href="/#home">
           <!-- <img src="/images/man-gold.png" class="w-10 mr-2" alt="home" /> -->
           <span>menag </span>
           <span class="text-brand-primary">ecolo</span>
@@ -117,13 +117,20 @@
           </a>
         </div>
       </div>
-      <div class="h-1/2 flex justify-between items-center">
+
+      <div class="h-full sm:h-1/2 flex justify-between items-center">
         <a class="flex items-center" href="/#home">
           <span class="material-symbols-outlined text-4xl">
             home_app_logo
           </span>
           <!-- Acceuil  -->
         </a>
+
+        <span class="flex items-center sm:hidden text-3xl sm:text-4xl h-font">
+          <!-- <img src="/images/man-gold.png" class="w-10 mr-2" alt="home" /> -->
+          <span class="text-gray-100">menag </span>
+          <span class="text-brand-primary">ecolo</span>
+        </span>
 
         <div class="hidden lg:flex">
           <a class="mr-6" href="/#about"> A propos </a>
@@ -158,44 +165,44 @@
     transition:fly={{ duration: 400, x: 500 }}
   >
     <div
-      class="py-4 px-4 text-sm absolute right-0 top-0 bottom-0 bg-[#111111] w-[85vw] sm:w-[26rem] patterns"
+      class="py-4 px-3 text-sm absolute right-0 top-0 bottom-0 bg-[#111111] w-[90vw] sm:w-[26rem] patterns"
     >
       <div class="grid grid-cols-2 gap-2">
         <a class="side-btn" href="/#home">
-          <span class="material-symbols-outlined text-2xl mr-2">
+          <span class="material-symbols-outlined text-2xl mr-1">
             home_app_logo
           </span>
           Acceuil
         </a>
 
         <a class="side-btn" href="/#mission">
-          <span class="material-symbols-outlined text-2xl mr-2"> church </span>
+          <span class="material-symbols-outlined text-2xl mr-1">
+            list_alt
+          </span>
           Notre mission
         </a>
 
         <a class="side-btn" href="/#contact">
-          <span class="material-symbols-outlined text-2xl mr-2">
-            contact_mail
+          <span class="material-symbols-outlined text-2xl mr-1">
+            phone_in_talk
           </span>
           Contact
         </a>
 
         <a class="side-btn" href="/#about">
-          <span class="material-symbols-outlined text-2xl mr-2"> hub </span>
+          <span class="material-symbols-outlined text-2xl mr-1">
+            indeterminate_question_box
+          </span>
           A propos
         </a>
 
         <a class="side-btn" href="/#vision">
-          <span class="material-symbols-outlined text-2xl mr-2">
-            volunteer_activism
-          </span>
+          <span class="material-symbols-outlined text-2xl mr-1"> target </span>
           Notre vision
         </a>
 
         <a class="side-btn" href="/#mission">
-          <span class="material-symbols-outlined text-2xl mr-2">
-            share_location
-          </span>
+          <span class="material-symbols-outlined text-2xl mr-1"> roofing </span>
           Méthode
         </a>
 
@@ -207,30 +214,27 @@
         </a>
 
         <a class="side-btn" href="/#valeurs">
-          <span class="material-symbols-outlined text-2xl mr-2">
-            account_circle
-          </span>
+          <span class="material-symbols-outlined text-2xl mr-1"> trophy </span>
           Nos valeurs
         </a>
         <a class="side-btn" href="/#clientele">
-          <span class="material-symbols-outlined text-2xl mr-2"> logout </span>
-          Notre clientèle
+          <span class="material-symbols-outlined text-2xl mr-1">
+            speaker_notes
+          </span>
+          Clientèle
         </a>
       </div>
 
       <div
         class="mt-4 flex items-center justify-between space-x-2 !text-gray-50"
       >
-        <span class="flex items-center text-4xl h-font">
+        <span class="flex items-center text-3xl sm:text-4xl h-font">
           <!-- <img src="/images/man-gold.png" class="w-10 mr-2" alt="home" /> -->
           <span class="text-gray-100">menag </span>
           <span class="text-brand-primary">ecolo</span>
         </span>
 
-        <div class="flex items-center">
-          <div class="h-[1px] w-[2.5rem] sm:w-[7rem]" />
-        </div>
-        <a target="blank" href="/#home">
+        <!-- <a target="blank" href="/#home">
           <ion-icon name="logo-youtube" class="text-xl" />
         </a>
         <a target="blank" href="/#home">
@@ -241,7 +245,7 @@
         </a>
         <a target="blank" href="/#home">
           <ion-icon name="logo-facebook" class="text-xl" />
-        </a>
+        </a> -->
       </div>
     </div>
   </div>

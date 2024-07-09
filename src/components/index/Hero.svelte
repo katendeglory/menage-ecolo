@@ -16,7 +16,7 @@
       <div class="flex items-center justify-center w-full">
         <Container>
           <div
-            class="wrd-container drop-shadow-sm h-font text-[4rem] leading-[4.2rem] md:text-9xl text-center uppercase max-w-5xl mx-auto"
+            class="wrd-container drop-shadow-sm h-font text-[4.25rem] leading-[4.5rem] md:text-9xl text-center uppercase max-w-5xl mx-auto"
           >
             <span></span>
             <span></span>
@@ -31,7 +31,7 @@
             <span></span>
           </div>
 
-          <div class="mt-4 bg-black/50 py-2 px-2 rounded-lg">
+          <div class="mt-10 sm:mt-4 bg-black/50 py-2 px-2 rounded-lg">
             <div
               class="wrd-container text-center text-base !font-thin text-gray-200"
             >
@@ -55,13 +55,15 @@
             </div>
           </div>
 
-          <div class="mt-4 flex items-center space-x-2">
-            <div class="wrd-container mt-5 flex items-center justify-center">
+          <div
+            class="mt-12 sm:mt-4 flex flex-col sm:flex-row items-center sm:space-x-2 space-y-2 sm:space-y-0"
+          >
+            <div class="wrd-container flex items-center justify-center">
               <span>
                 <a
                   href="/#quote"
                   target="_blank"
-                  class="btn btn-secondary h-font !text-xl !px-10 tracking-widest"
+                  class="btn btn-secondary h-font !text-xl !px-10 tracking-widest !w-[90vw] sm:!w-min"
                 >
                   Demander Une Quotation
                   <span class="material-symbols-outlined text-4xl ml-2">
@@ -71,12 +73,12 @@
               </span>
             </div>
             <!--  -->
-            <div class="wrd-container mt-5 flex items-center justify-center">
+            <div class="wrd-container flex items-center justify-center">
               <span>
                 <a
                   href="/#contact"
                   target="_blank"
-                  class="btn btn-black h-font !text-xl !px-10 tracking-widest"
+                  class="btn btn-black h-font !text-xl !px-10 tracking-widest !w-[90vw] sm:!w-min"
                 >
                   Nous Contacter
                   <span class="material-symbols-outlined text-4xl ml-2">
