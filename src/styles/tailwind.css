@@ -10,6 +10,10 @@
   white-space: nowrap !important;
 }
 
+.nav:hover {
+  @apply transition-colors duration-200 text-brand-primary;
+}
+
 .side-btn {
   @apply bg-gray-800/70 !text-gray-200 border border-black/10 !w-full rounded-sm flex items-center justify-center py-[0.4rem];
 }

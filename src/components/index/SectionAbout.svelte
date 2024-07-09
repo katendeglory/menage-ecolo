@@ -4,7 +4,6 @@
 </script>
 
 <div id="about"></div>
-
 <div class="relative py-10 bg-[#111111] patterns text-gray-300">
   <!-- About Section -->
   <Container overflowHidden={false}>
@@ -60,16 +59,20 @@
 </div>
 
 <div id="mission"></div>
-
 <div class="py-10">
   <Container>
     <SectionHeading text1="Notre" text2="Mission" />
 
     <div class="text-center">
       « La propreté est un luxe à la portée de tout le monde »
+      <span class="text-center text-brand-primary hidden md:inline">
+        — Diane de Beausacq.
+      </span>
     </div>
 
-    <div class="mt-4 text-center text-brand-primary">— Diane de Beausacq.</div>
+    <div class="mt-4 text-center text-brand-primary md:hidden">
+      — Diane de Beausacq.
+    </div>
 
     <div class="mt-4 text-center">
       Notre mission est d'offrir des services de ménage accessibles à tous,
@@ -78,7 +81,84 @@
   </Container>
 </div>
 
+<!-- CLientele -->
+<div id="clientele"></div>
+<div class="pb-10">
+  <Container>
+    <SectionHeading text1="Notre" text2="Clientèle" />
+
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!--  -->
+      <div class="">
+        <div
+          class="h-[15rem] rounded-md cl-bg"
+          style="background-image: url(/images/client-school.jpg);"
+        />
+        <div class="mt-4 text-center manrope text-black">
+          Les écoles & les centres éducatifs
+        </div>
+      </div>
+      <!--  -->
+      <div class="">
+        <div
+          class="h-[15rem] rounded-md cl-bg"
+          style="background-image: url(/images/client-restaurant.jpg);"
+        />
+        <div class="mt-4 text-center manrope text-black">
+          Les restaurants et fast-food
+        </div>
+      </div>
+      <!--  -->
+      <div class="">
+        <div
+          class="h-[15rem] rounded-md cl-bg"
+          style="background-image: url(/images/client-supermarket.jpg);"
+        />
+        <div class="mt-4 text-center manrope text-black">
+          Les supermarchés et épiceries
+        </div>
+      </div>
+      <!--  -->
+      <div class="">
+        <div
+          class="h-[15rem] rounded-md cl-bg"
+          style="background-image: url(/images/client-hospital.jpg);"
+        />
+        <div class="mt-4 text-center manrope text-black">
+          Les centres hospitaliers (dentisterie, opticien…)
+        </div>
+      </div>
+      <!--  -->
+      <div class="">
+        <div
+          class="h-[15rem] rounded-md cl-bg"
+          style="background-image: url(/images/client-office.jpg);"
+        />
+        <div class="mt-4 text-center manrope text-black">
+          Les bureaux (banques, centre d’appels, agences…)
+        </div>
+      </div>
+      <!--  -->
+      <div class="">
+        <div
+          class="h-[15rem] rounded-md cl-bg"
+          style="background-image: url(/images/client-house.jpg);"
+        />
+        <div class="mt-4 text-center manrope text-black">
+          Les résidences (maisons, condos en construction, apparts...)
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </Container>
+</div>
+
 <style>
+  .cl-bg {
+    background-size: cover;
+    background-position: center;
+  }
+
   .pr-circle {
     background-image: linear-gradient(45deg, #c68101 50%, #333 50%);
   }

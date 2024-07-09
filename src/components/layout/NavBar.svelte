@@ -119,7 +119,7 @@
       </div>
 
       <div class="h-full sm:h-1/2 flex justify-between items-center">
-        <a class="flex items-center" href="/#home">
+        <a class="nav flex items-center" href="/#home">
           <span class="material-symbols-outlined text-4xl">
             home_app_logo
           </span>
@@ -132,19 +132,19 @@
           <span class="text-brand-primary">ecolo</span>
         </span>
 
-        <div class="hidden lg:flex">
-          <a class="mr-6" href="/#about"> A propos </a>
-          <a class="mr-6" href="/#mission"> Notre mission </a>
-          <a class="mr-6" href="/#vision"> Notre vision </a>
-          <a class="mr-6" href="/#valeurs"> Nos valeurs </a>
-          <a class="mr-6" href="/#clientele"> Notre clientèle </a>
+        <div class="hidden lg:flex text-[0.9rem]">
+          <a class="nav mr-6 manrope" href="/#about"> A propos </a>
+          <a class="nav mr-6 manrope" href="/#mission"> Notre mission </a>
+          <a class="nav mr-6 manrope" href="/#vision"> Notre vision </a>
+          <a class="nav mr-6 manrope" href="/#valeurs"> Nos valeurs </a>
+          <a class="nav mr-6 manrope" href="/#clientele"> Notre clientèle </a>
         </div>
 
         <div class="">
           <div class="flex items-center justify-center">
             <button
               on:click={() => (showSideMenu = true)}
-              class="flex items-center justify-center"
+              class="flex items-center justify-center nav"
             >
               <span id="side-menu" class="material-symbols-outlined text-4xl">
                 apps
