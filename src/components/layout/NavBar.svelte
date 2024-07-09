@@ -6,7 +6,6 @@
   import { slide, fly } from "svelte/transition";
 
   let PWAInstallBtn;
-  let is_chrome = !!window.chrome;
   let clickListener;
   let showSideMenu = false;
 
@@ -31,24 +30,14 @@
 
     const scrollFunction = () => {
       let innerHeader = document.getElementById("inner-header");
-      // let header = document.getElementById("header");
-      let sideMenu = document.getElementById("side-menu");
 
       if (
         document.body.scrollTop > 40 ||
         document.documentElement.scrollTop > 40
       ) {
         innerHeader.classList.replace("h-32", "h-28");
-        // header.classList.add("shadow-sm");
-        // header.classList.add("bg-brand-white");
-        // header.classList.replace("text-gray-400", "text-gray-600");
-        sideMenu.classList.replace("text-gray-100", "text-gray-600");
       } else {
         innerHeader.classList.replace("h-28", "h-32");
-        // header.classList.remove("shadow-sm");
-        // header.classList.remove("bg-brand-white");
-        // header.classList.replace("text-gray-600", "text-gray-400");
-        sideMenu.classList.replace("text-gray-600", "text-gray-100");
       }
     };
 
@@ -107,21 +96,21 @@
 
         <div class="hidden lg:flex items-center">
           <a
-            href="https://www.youtube.com/@mantv6688"
+            href="/#quote"
             target="_blank"
-            class="btn btn-secondary !px-4 !py-1 mr-2"
+            class="!text-base h-font btn btn-secondary !px-4 !py-1 mr-2 !text-white"
           >
-            Demander Une Quotation
+            Demander une quotation
             <span class="material-symbols-outlined text-2xl ml-2">
-              double_arrow
+              export_notes
             </span>
           </a>
           <a
-            href="https://www.youtube.com/@mantv6688"
+            href="/#contact"
             target="_blank"
-            class="btn btn-white !px-4 !py-1"
+            class="!text-base h-font btn btn-white !px-4 !py-1"
           >
-            Nous Contacter
+            Nous contacter
             <span class="material-symbols-outlined text-2xl ml-2">
               phone_in_talk
             </span>
@@ -129,13 +118,19 @@
         </div>
       </div>
       <div class="h-1/2 flex justify-between items-center">
-        <a class="flex items-center" href="/#home"> Acceuil </a>
+        <a class="flex items-center" href="/#home">
+          <span class="material-symbols-outlined text-4xl">
+            home_app_logo
+          </span>
+          <!-- Acceuil  -->
+        </a>
 
         <div class="hidden lg:flex">
-          <a class="mr-6" href="/#home">Hello</a>
-          <a class="mr-6" href="/#about">Maison</a>
-          <a class="mr-6" href="/#ministries">Ministères</a>
-          <a class="mr-6" href="/#about">Extensions</a>
+          <a class="mr-6" href="/#about"> A propos </a>
+          <a class="mr-6" href="/#mission"> Notre mission </a>
+          <a class="mr-6" href="/#vision"> Notre vision </a>
+          <a class="mr-6" href="/#valeurs"> Nos valeurs </a>
+          <a class="mr-6" href="/#clientele"> Notre clientèle </a>
         </div>
 
         <div class="">
@@ -144,10 +139,7 @@
               on:click={() => (showSideMenu = true)}
               class="flex items-center justify-center"
             >
-              <span
-                id="side-menu"
-                class="material-symbols-outlined text-gray-100 text-4xl"
-              >
+              <span id="side-menu" class="material-symbols-outlined text-4xl">
                 apps
               </span>
             </button>
@@ -163,10 +155,10 @@
   <div
     class="fixed top-0 left-0 right-0 bottom-0 h-screen w-screen bg-black/25 z-[3000]"
     on:click={() => (showSideMenu = false)}
-    transition:fly={{ duration: 100, x: 500 }}
+    transition:fly={{ duration: 400, x: 500 }}
   >
     <div
-      class="py-4 px-4 text-sm absolute right-0 top-0 bottom-0 glassmorph-5 w-[85vw] sm:w-[26rem] patterns"
+      class="py-4 px-4 text-sm absolute right-0 top-0 bottom-0 bg-[#111111] w-[85vw] sm:w-[26rem] patterns"
     >
       <div class="grid grid-cols-2 gap-2">
         <a class="side-btn" href="/#home">
@@ -175,9 +167,10 @@
           </span>
           Acceuil
         </a>
-        <a class="side-btn" href="/maison">
+
+        <a class="side-btn" href="/#mission">
           <span class="material-symbols-outlined text-2xl mr-2"> church </span>
-          Maison
+          Notre mission
         </a>
 
         <a class="side-btn" href="/#contact">
@@ -187,141 +180,66 @@
           Contact
         </a>
 
-        <a class="side-btn capitalize" href="/#ministries">
+        <a class="side-btn" href="/#about">
           <span class="material-symbols-outlined text-2xl mr-2"> hub </span>
-          Ministères
+          A propos
         </a>
 
-        <a class="side-btn capitalize" href="/#about">
-          <span class="material-symbols-outlined text-2xl mr-2">
-            share_location
-          </span>
-          Extensions
-        </a>
-
-        <a class="side-btn" href="/donate">
+        <a class="side-btn" href="/#vision">
           <span class="material-symbols-outlined text-2xl mr-2">
             volunteer_activism
           </span>
-          Don en ligne
+          Notre vision
         </a>
 
-        <a class="side-btn col-span-full !bg-brand-primary" href="/#ressources">
-          événements & Ressources
+        <a class="side-btn" href="/#mission">
+          <span class="material-symbols-outlined text-2xl mr-2">
+            share_location
+          </span>
+          Méthode
+        </a>
+
+        <a class="side-btn col-span-full !bg-brand-primary" href="/#quote">
+          Demander une quotation
           <span class="material-symbols-outlined text-2xl ml-2">
-            media_link
+            export_notes
           </span>
         </a>
 
-        <div
-          class="!text-gray-800 mt-2 font-normal flex items-center text-lg tracking-wider"
-        >
-          <span class="material-symbols-outlined text-3xl mr-1">
-            laptop_mac
+        <a class="side-btn" href="/#valeurs">
+          <span class="material-symbols-outlined text-2xl mr-2">
+            account_circle
           </span>
-          Connecter:
-        </div>
-
-        <div class="col-span-full !w-full grid grid-cols-2 gap-2">
-          <a href="/#ressources" class="side-btn-sm side-btn">
-            <span class="material-symbols-outlined text-xl mr-2">
-              headphones
-            </span>
-            <div class>Podcasts</div>
-          </a>
-          <a href="/#ressources" class="side-btn-sm side-btn">
-            <span class="material-symbols-outlined text-xl mr-2">
-              mic_external_on
-            </span>
-            <div class>Serments</div>
-          </a>
-          <a
-            class="side-btn-sm side-btn"
-            href="https://m.facebook.com/search/top?q=%C3%A9cris%20divins%20-%20israel%20kayembe"
-            target="_blank"
-          >
-            <span class="material-symbols-outlined text-xl mr-2"> draw </span>
-            <div class>écris divins</div>
-          </a>
-          <a
-            href="https://www.youtube.com/results?search_query=J%E2%80%99ai+Appris+-+Israel+Kayembe"
-            target="_blank"
-            class="side-btn-sm side-btn"
-          >
-            <span class="material-symbols-outlined text-xl mr-2">
-              emoji_objects
-            </span>
-            <div class>J'ai appris</div>
-          </a>
-          <a
-            class="col-span-full side-btn-sm side-btn"
-            href="https://m.facebook.com/search/top?q=j%27ai%20appris%20-%20israel%20kayembe"
-            target="_blank"
-          >
-            <span class="material-symbols-outlined text-xl mr-2">
-              health_metrics
-            </span>
-            <div class>Heures d'intimité</div>
-          </a>
-        </div>
-
-        {#if get($config, "currentUser.role") == "super-admin"}
-          <a class="side-btn col-span-full !bg-brand-primary" href="/adm">
-            <span class="material-symbols-outlined text-2xl mr-2">
-              admin_panel_settings
-            </span>
-            Admin
-          </a>
-        {/if}
-        {#if get($config, "currentUser.username")}
-          <a class="side-btn" href="/profile">
-            <span class="material-symbols-outlined text-2xl mr-2">
-              account_circle
-            </span>
-            Profile
-          </a>
-          <button on:click={handleLogout} class="side-btn">
-            <span class="material-symbols-outlined text-2xl mr-2">
-              logout
-            </span>
-            Quitter
-          </button>
-        {:else}
-          <a
-            class="side-btn !bg-brand-primary !w-full text-brand-white"
-            href="/login"
-          >
-            Connexion
-            <span class="material-symbols-outlined text-2xl ml-2"> send </span>
-          </a>
-          <a class="side-btn side-btn" href="/register">
-            Inscription
-            <span class="material-symbols-outlined text-2xl ml-2">
-              edit_note
-            </span>
-          </a>
-        {/if}
+          Nos valeurs
+        </a>
+        <a class="side-btn" href="/#clientele">
+          <span class="material-symbols-outlined text-2xl mr-2"> logout </span>
+          Notre clientèle
+        </a>
       </div>
+
       <div
-        class="mt-4 flex items-center justify-between space-x-2 !text-gray-800"
+        class="mt-4 flex items-center justify-between space-x-2 !text-gray-50"
       >
-        <img src="/images/man-gold.png" class="w-10" alt="home" />
+        <span class="flex items-center text-4xl h-font">
+          <!-- <img src="/images/man-gold.png" class="w-10 mr-2" alt="home" /> -->
+          <span class="text-gray-100">menag </span>
+          <span class="text-brand-primary">ecolo</span>
+        </span>
+
         <div class="flex items-center">
           <div class="h-[1px] w-[2.5rem] sm:w-[7rem]" />
         </div>
-        <a target="blank" href="https://www.youtube.com/@mantv6688">
+        <a target="blank" href="/#home">
           <ion-icon name="logo-youtube" class="text-xl" />
         </a>
-        <a target="blank" href="https://coachisraelkayembe.com">
+        <a target="blank" href="/#home">
           <ion-icon name="logo-twitter" class="text-xl" />
         </a>
-        <a target="blank" href="https://www.instagram.com/maisondadoration_man">
+        <a target="blank" href="/#home">
           <ion-icon name="logo-instagram" class="text-xl" />
         </a>
-        <a
-          target="blank"
-          href="https://web.facebook.com/Maisondadorationpourlesnations"
-        >
+        <a target="blank" href="/#home">
           <ion-icon name="logo-facebook" class="text-xl" />
         </a>
       </div>

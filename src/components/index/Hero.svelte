@@ -31,39 +31,41 @@
             <span></span>
           </div>
 
-          <div
-            class="wrd-container mt-4 text-center text-xl !font-thin text-gray-200"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span>La propreté est</span>
-            <span>un luxe</span>
-            <span>à la portée</span>
-            <span>de tout</span>
-            <span>le monde</span>
+          <div class="mt-4 bg-black/50 py-2 px-2 rounded-lg">
+            <div
+              class="wrd-container text-center text-base !font-thin text-gray-200"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span>« La propreté</span>
+              <span>est</span>
+              <span>un luxe</span>
+              <span>à la portée</span>
+              <span>de tout</span>
+              <span>le monde »</span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
 
           <div class="mt-4 flex items-center space-x-2">
             <div class="wrd-container mt-5 flex items-center justify-center">
               <span>
                 <a
-                  href="https://www.youtube.com/@mantv6688"
+                  href="/#quote"
                   target="_blank"
                   class="btn btn-secondary h-font !text-xl !px-10 tracking-widest"
                 >
                   Demander Une Quotation
                   <span class="material-symbols-outlined text-4xl ml-2">
-                    double_arrow
+                    export_notes
                   </span>
                 </a>
               </span>
@@ -72,7 +74,7 @@
             <div class="wrd-container mt-5 flex items-center justify-center">
               <span>
                 <a
-                  href="https://www.youtube.com/@mantv6688"
+                  href="/#contact"
                   target="_blank"
                   class="btn btn-black h-font !text-xl !px-10 tracking-widest"
                 >

@@ -35,15 +35,15 @@ ion-icon {
 } */
 
 .btn-secondary {
-  @apply bg-brand-primary text-brand-white;
+  @apply bg-brand-primary text-gray-50;
 }
 
 .btn-white {
-  @apply  !bg-brand-white !text-brand-black;
+  @apply bg-white text-brand-black;
 }
 
 .btn-black {
-  @apply  !text-brand-primary !bg-[#111111];
+  @apply text-brand-primary !bg-[#111111];
 }
 
 .btn-third {
