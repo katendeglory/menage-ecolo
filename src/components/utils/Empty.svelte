@@ -12,5 +12,5 @@
     {text}
   </h1>
   <!-- <img src="./images/not-found.svg" alt="notfound" class="max-w-xs" /> -->
-  <img src="/fav.png" alt="notfound" class="max-w-[10rem]" />
+  <img src="/favicon.png" alt="notfound" class="max-w-[10rem]" />
 </div>

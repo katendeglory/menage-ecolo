@@ -4,7 +4,10 @@
 </script>
 
 <svelte:head>
-  <title>A Propos - M.A.N. - Maison D'Adoration Pour les Nations</title>
+  <title
+    >A Propos - Ménage Écolo - La propreté est un luxe à la portée de tout le
+    monde</title
+  >
 </svelte:head>
 
 <MaisonVideo />

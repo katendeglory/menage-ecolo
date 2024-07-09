@@ -60,7 +60,7 @@
           <div class="flex items-center">
             <div
               class="w-14 h-14 rounded-full mr-3 border border-gray-300"
-              style="background-image: url(/images/man-tv.jpg); background-size: cover; background-position: center;"
+              style="background-image: url(/images/favicon.png); background-size: cover; background-position: center;"
               data-aos="fade-right"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="750"

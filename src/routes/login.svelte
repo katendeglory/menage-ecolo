@@ -44,7 +44,10 @@
 </script>
 
 <svelte:head>
-  <title>Connexion - M.A.N. - Maison D'Adoration Pour les Nations</title>
+  <title
+    >Connexion - Ménage Écolo - La propreté est un luxe à la portée de tout le
+    monde</title
+  >
 </svelte:head>
 
 <div class="content">

@@ -1,6 +1,7 @@
 <script>
   import Container from "./../components/utils/Container.svelte";
-  let appName = "M.A.N. - Maison D'Adoration Pour les Nations";
+  let appName =
+    "Ménage Écolo - La propreté est un luxe à la portée de tout le monde";
 </script>
 
 <svelte:head>

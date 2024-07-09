@@ -35,9 +35,9 @@
         document.body.scrollTop > 40 ||
         document.documentElement.scrollTop > 40
       ) {
-        innerHeader.classList.replace("h-32", "h-28");
+        innerHeader.classList.replace("sm:h-32", "sm:h-28");
       } else {
-        innerHeader.classList.replace("h-28", "h-32");
+        innerHeader.classList.replace("sm:h-28", "sm:h-32");
       }
     };
 
@@ -89,7 +89,7 @@
     <div id="inner-header" class="h-16 sm:h-32 transition-all duration-500">
       <div class="h-1/2 hidden sm:flex justify-between items-center">
         <a class="flex items-center text-3xl sm:text-4xl h-font" href="/#home">
-          <!-- <img src="/images/man-gold.png" class="w-10 mr-2" alt="home" /> -->
+          <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
           <span>menag </span>
           <span class="text-brand-primary">ecolo</span>
         </a>
@@ -127,7 +127,7 @@
         </a>
 
         <span class="flex items-center sm:hidden text-3xl sm:text-4xl h-font">
-          <!-- <img src="/images/man-gold.png" class="w-10 mr-2" alt="home" /> -->
+          <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
           <span class="text-gray-100">menag </span>
           <span class="text-brand-primary">ecolo</span>
         </span>
@@ -229,7 +229,7 @@
         class="mt-4 flex items-center justify-between space-x-2 !text-gray-50"
       >
         <span class="flex items-center text-3xl sm:text-4xl h-font">
-          <!-- <img src="/images/man-gold.png" class="w-10 mr-2" alt="home" /> -->
+          <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
           <span class="text-gray-100">menag </span>
           <span class="text-brand-primary">ecolo</span>
         </span>

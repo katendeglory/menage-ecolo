@@ -4,7 +4,10 @@
 </script>
 
 <svelte:head>
-  <title>Dons En Ligne - M.A.N. - Maison D'Adoration Pour les Nations</title>
+  <title
+    >Dons En Ligne - Ménage Écolo - La propreté est un luxe à la portée de tout
+    le monde</title
+  >
 </svelte:head>
 
 <DonateVideo />

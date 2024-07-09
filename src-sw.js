@@ -33,7 +33,7 @@ self.addEventListener("push", e => {
 
   self.registration.showNotification(data.title, {
     body: data.body,
-    icon: "./fav.png",
+    icon: "./favicon.png",
     data: {
       url: `${self.location.origin}${data.url}`
     }

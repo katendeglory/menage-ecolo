@@ -88,7 +88,10 @@
 </script>
 
 <svelte:head>
-  <title>Votre Profile - M.A.N. - Maison D'Adoration Pour les Nations</title>
+  <title
+    >Votre Profile - Ménage Écolo - La propreté est un luxe à la portée de tout
+    le monde</title
+  >
 </svelte:head>
 
 <MyProfileHeading />

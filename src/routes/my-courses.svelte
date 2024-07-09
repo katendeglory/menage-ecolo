@@ -29,7 +29,10 @@
 </script>
 
 <svelte:head>
-  <title>Vos Cours Suivis - M.A.N. - Maison D'Adoration Pour les Nations</title>
+  <title
+    >Vos Cours Suivis - Ménage Écolo - La propreté est un luxe à la portée de
+    tout le monde</title
+  >
 </svelte:head>
 
 <MyCoursesHeading />

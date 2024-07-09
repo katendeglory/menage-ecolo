@@ -60,7 +60,10 @@
 </script>
 
 <svelte:head>
-  <title>Enregistrement - M.A.N. - Maison D'Adoration Pour les Nations</title>
+  <title
+    >Enregistrement - Ménage Écolo - La propreté est un luxe à la portée de tout
+    le monde</title
+  >
 </svelte:head>
 
 {#if get($config, "currentUser.username")}

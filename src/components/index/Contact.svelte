@@ -54,7 +54,7 @@
 
   <div class="absolute bottom-0 left-0 right-0 w-full">
     <Container>
-      <img src="/images/man-gold.png" class="w-[3rem] md:w-[3.5rem]" alt="" />
+      <img src="/images/favicon.png" class="w-[3rem] md:w-[3.5rem]" alt="" />
     </Container>
   </div>
 
@@ -64,8 +64,8 @@
     <Container>
       <div class="mb-2">
         <div class="flex items-center justify-center mb-4">
-          <!-- <img src="/fav-white.png" class="h-28 md:h-48" alt="arc" /> -->
-          <img src="/images/man-gold.png" class="h-28 md:h-48" alt="arc" />
+          <!-- <img src="/favicon.png" class="h-28 md:h-48" alt="arc" /> -->
+          <img src="/images/favicon.png" class="h-28 md:h-48" alt="arc" />
         </div>
 
         <div

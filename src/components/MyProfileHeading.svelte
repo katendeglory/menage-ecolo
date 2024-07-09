@@ -13,7 +13,7 @@
         <div
           class="animate-character text-[1.85rem] leading-[2rem] md:text-5xl text-center mb-4 md:mb-6 uppercase tracking-widest pt-4 md:pt-6"
         >
-          M.A.N. - Maison D'Adoration Pour les Nations
+          Ménage Écolo - La propreté est un luxe à la portée de tout le monde
         </div>
 
         <div class="flex justify-center my-0">

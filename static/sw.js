@@ -33,7 +33,7 @@ self.addEventListener("push", e => {
 
   self.registration.showNotification(data.title, {
     body: data.body,
-    icon: "./fav.png",
+    icon: "./favicon.png",
     data: {
       url: `${self.location.origin}${data.url}`
     }
@@ -53,7 +53,7 @@ workbox.precaching.precacheAndRoute([
   { "revision": "58f8c722024a273ab4aeca99f12d75c2", "url": "app.js" },
   { "revision": "035331b5cc87ec340bfba0f6b3a8d381", "url": "build/bundle.css" },
   { "revision": "329550c45dc8bfcc82aa3d021d71298b", "url": "build/bundle.js" },
-  { "revision": "a2a4bc916a602a3e65f509a41f257e82", "url": "fav.png" },
+  { "revision": "a2a4bc916a602a3e65f509a41f257e82", "url": "favicon.png" },
   { "revision": "858732bdbf42b2b6211c410e832eb165", "url": "images/faisceau.svg" },
   { "revision": "0701859b54cdb0d5a3c43dec36a9602b", "url": "images/hero-img-01.png" },
   { "revision": "bbf62e9b3f9f0ad759ae0107b6449970", "url": "images/pattern.svg" },

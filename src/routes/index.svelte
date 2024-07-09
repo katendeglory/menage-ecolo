@@ -11,7 +11,10 @@
 </script>
 
 <svelte:head>
-  <title>Acceuil - M.A.N. - Maison D'Adoration Pour les Nations</title>
+  <title>
+    Acceuil - Ménage Écolo - La propreté est un luxe à la portée de tout le
+    monde
+  </title>
 </svelte:head>
 
 <!-- ✅ -->
