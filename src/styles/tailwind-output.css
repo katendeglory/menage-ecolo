@@ -1518,6 +1518,14 @@ select {
   --tw-text-opacity: 1 !important;
   color: rgb(249 168 37 / var(--tw-text-opacity)) !important;
 }
+.text-brand-black {
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+.\!text-brand-black {
+  --tw-text-opacity: 1 !important;
+  color: rgb(33 33 33 / var(--tw-text-opacity)) !important;
+}
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;

@@ -2,15 +2,17 @@
   import Container from "../utils/Container.svelte";
 </script>
 
-<div class="relative showcase bg-[#111111] contact-bg">
+<div class="relative showcase bg-brand-white contact-bg">
   <div
-    class="content flex items-center text-gray-300 min-h-screen pt-14 pb-8 md:pt-0 md:pb-0"
+    class="content flex items-center text-brand-black h-[100vh] pt-14 pb-8 md:pt-0 md:pb-0"
   >
     <Container>
       <div class="mb-2">
-        <span class="flex items-center text-6xl sm:text-8xl h-font">
+        <span
+          class="flex items-center justify-center text-6xl sm:text-8xl h-font"
+        >
           <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
-          <span class="text-gray-100">menag </span>
+          <span class="text-brand-black">menag </span>
           <span class="text-brand-primary">ecolo</span>
         </span>
 
@@ -27,7 +29,10 @@
 
         <div class="flex justify-center relative z-10">
           <div class="text-gray-200 text-sm md:text-base text-center">
-            <a href="tel:+243 995 216 163" class="contact-box !text-gray-300">
+            <a
+              href="tel:+243 995 216 163"
+              class="contact-box !text-brand-black"
+            >
               <span
                 class="material-symbols-outlined mr-2 text-3xl text-brand-yellow"
               >
@@ -37,7 +42,7 @@
             </a>
             <a
               href="mailto:menage-ecolo@gmail.com"
-              class="contact-box !text-gray-300"
+              class="contact-box !text-brand-black"
             >
               <span
                 class="material-symbols-outlined mr-2 text-3xl text-brand-yellow"
