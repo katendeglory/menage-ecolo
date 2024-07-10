@@ -13,16 +13,12 @@
   </title>
 </svelte:head>
 
-<!-- ✅ -->
 <Hero />
 
-<!-- ✅ -->
 <SectionAbout />
 
-<!--  -->
 <Featured />
 
 <!-- <Services /> -->
 
-<!--  -->
 <Contact />
