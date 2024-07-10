@@ -3,6 +3,7 @@
   import SectionHeading from "../utils/SectionHeading.svelte";
 </script>
 
+<!-- A Props -->
 <div id="about"></div>
 <div class="relative py-10 bg-[#111111] patterns text-gray-300">
   <!-- About Section -->
@@ -58,6 +59,7 @@
   </Container>
 </div>
 
+<!-- Mission -->
 <div id="mission"></div>
 <div class="py-10">
   <Container>
@@ -77,6 +79,145 @@
     <div class="mt-4 text-center">
       Notre mission est d'offrir des services de ménage accessibles à tous,
       facilitant ainsi la conciliation entre travail et famille.
+    </div>
+  </Container>
+</div>
+
+<!-- Vision -->
+<div id="vision"></div>
+<div class="pt-20 pb-10 bg-[#111111] patterns">
+  <SectionHeading text1="" text2="Vision" breakWord />
+
+  <Container>
+    <div class="text-gray-300">
+      La vision de Ménage écolo se resume en 5 points:
+      <div class="mt-4"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4">
+        <!--  -->
+        <div
+          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
+        >
+          <div
+            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
+          >
+            <span
+              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
+            >
+              ads_click
+            </span>
+            <span class="font-extralight mr-2">Accessibilité</span>
+            <span
+              class="font-medium underline underline-offset-8 decoration-white/25"
+              >universelle</span
+            >
+          </div>
+          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
+            Offrir des services de ménage abordables et de haute qualité pour
+            tous les types de foyers, indépendamment de leurs revenus ou de leur
+            taille.
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
+        >
+          <div
+            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
+          >
+            <span
+              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
+            >
+              event_available
+            </span>
+            <span class="font-extralight mr-2">Flexibilité</span>
+            <span
+              class="font-medium underline underline-offset-8 decoration-white/25"
+              >des horaires</span
+            >
+          </div>
+          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
+            Proposer des plages horaires flexibles pour les services de ménage,
+            afin de s'adapter aux emplois du temps variés des clients.
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
+        >
+          <div
+            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
+          >
+            <span
+              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
+            >
+              energy_savings_leaf
+            </span>
+            <span class="font-extralight mr-2">Écologique</span>
+            <span
+              class="font-medium underline underline-offset-8 decoration-white/25"
+            >
+              & durable
+            </span>
+          </div>
+          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
+            Utiliser des produits de nettoyage écologiques et adopter des
+            pratiques durables pour minimiser l'impact environnemental.
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
+        >
+          <div
+            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
+          >
+            <span
+              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
+            >
+              emoji_events
+            </span>
+            <span class="font-extralight mr-2">Formation </span>
+            <span
+              class="font-medium underline underline-offset-8 decoration-white/25"
+            >
+              & professionnalisme
+            </span>
+          </div>
+          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
+            Former continuellement le personnel pour garantir un service de
+            ménage professionnel, fiable et respectueux des standards de
+            sécurité et de qualité.
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
+        >
+          <div
+            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
+          >
+            <span
+              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
+            >
+              instant_mix
+            </span>
+            <span class="font-extralight mr-2">Personnalisation</span>
+            <span
+              class="font-medium underline underline-offset-8 decoration-white/25"
+            >
+              des services
+            </span>
+          </div>
+          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
+            Offrir des options de ménage personnalisées pour répondre aux
+            besoins spécifiques de chaque foyer, qu'il s'agisse de nettoyages
+            réguliers, de nettoyages en profondeur ou de services spécifiques
+            tels que le nettoyage après rénovation.
+          </div>
+        </div>
+        <!--  -->
+      </div>
     </div>
   </Container>
 </div>
@@ -135,7 +276,7 @@
           style="background-image: url(/images/client-office.jpg);"
         />
         <div class="mt-4 text-center manrope text-black">
-          Les bureaux (banques, centre d’appels, agences…)
+          Les bureaux (banques, centre d'appels, agences…)
         </div>
       </div>
       <!--  -->
