@@ -1,15 +1,13 @@
 <script>
   import Container from "../utils/Container.svelte";
-  import get from "lodash.get";
-  import config from "../../stores/config";
 </script>
 
 <div
-  class="pt-5 pb-[1.25rem] font-light text-gray-500 tracking-wider bg-brand-white"
+  class="---pt-5 pb-[1.25rem] font-light text-gray-500 tracking-wider bg-brand-white"
   id="contact"
 >
   <div class="relative">
-    <Container>
+    <!-- <Container>
       <div class="h-font mb-4 text-4xl text-brand-primary">Map du Site</div>
       <div class={`grid gap-3 grid-cols-2 md:grid-cols-3 text-sm`}>
         <a class="" href="/#home">Acceuil</a>
@@ -27,10 +25,10 @@
           <a class="" href="/register">Inscription</a>
         {/if}
       </div>
-    </Container>
+    </Container> -->
     <Container>
       <div
-        class="h-font mt-4 flex items-center justify-between md:justify-start"
+        class="h-font ---mt-4 flex items-center justify-between md:justify-start"
       >
         <div>&copy; 2024</div>
         <a

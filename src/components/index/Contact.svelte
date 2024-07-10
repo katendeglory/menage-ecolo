@@ -4,7 +4,7 @@
 
 <div class="relative showcase bg-brand-white contact-bg">
   <div
-    class="content flex items-center text-brand-black h-[100vh] pt-14 pb-8 md:pt-0 md:pb-0"
+    class="content flex items-center text-brand-black h-[75vh] pt-14 pb-8 md:pt-0 md:pb-0"
   >
     <Container>
       <div class="mb-2">
@@ -76,7 +76,7 @@
   }
 
   .showcase {
-    height: 100vh;
+    height: 75vh;
     position: relative;
   }
 
