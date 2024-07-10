@@ -2,77 +2,17 @@
   import Container from "../utils/Container.svelte";
 </script>
 
-<!-- <div class="text-white border border-gray-100/20 rounded-3xl p-1">
-  <div
-    class="bg-gray-100/20 border border-gray-100/20 rounded-2xl p-4 flex flex-col space-y-2"
-  >
-    <a
-      class="flex items-center text-xs tracking-widest"
-      target="blank"
-      href="https://www.youtube.com/@mantv6688"
-    >
-      <ion-icon name="logo-youtube" class="text-base mr-2" />
-      M.A.N. TV
-    </a>
-    <a
-      class="flex items-center text-xs tracking-widest"
-      target="blank"
-      href="mailto:maisondadoration@gmail.com"
-    >
-      <ion-icon name="mail" class="text-base mr-2" /> maisondadoration@gmail.com
-    </a>
-    <a
-      class="flex items-center text-xs tracking-widest"
-      target="blank"
-      href="https://www.facebook.com/Maisondadorationpourlesnations"
-    >
-      <ion-icon name="logo-facebook" class="text-base mr-2" /> Maison d'adoration
-      Pour les nations
-    </a>
-    <a
-      class="flex items-center text-xs tracking-widest"
-      target="blank"
-      href="https://www.instagram.com/maisondadoration_man"
-    >
-      <ion-icon name="logo-instagram" class="text-base mr-2" /> Maison d'adoration
-      M.A.N.
-    </a>
-  </div>
-</div> -->
-
 <div class="relative showcase bg-[#111111] contact-bg">
-  <div class="hidden md:block absolute bottom-0 left-0 right-0 w-full">
-    <img src="/images/wave-haikei-white.svg" class="w-full" alt="pizza" />
-  </div>
-  <div class="md:hidden absolute bottom-0 left-0 right-0 w-full">
-    <img
-      src="/images/wave-haikei-white-mobile.svg"
-      class="w-full"
-      alt="pizza"
-    />
-  </div>
-
-  <div class="absolute bottom-0 left-0 right-0 w-full">
-    <Container>
-      <img src="/images/favicon.png" class="w-[3rem] md:w-[3.5rem]" alt="" />
-    </Container>
-  </div>
-
   <div
     class="content flex items-center text-gray-300 min-h-screen pt-14 pb-8 md:pt-0 md:pb-0"
   >
     <Container>
       <div class="mb-2">
-        <div class="flex items-center justify-center mb-4">
-          <!-- <img src="/favicon.png" class="h-28 md:h-48" alt="arc" /> -->
-          <img src="/images/favicon.png" class="h-28 md:h-48" alt="arc" />
-        </div>
-
-        <div
-          class="text-brand-primary h-font text-brand-yellow text-3xl md:text-4xl text-center mb-4 uppercase tracking-widest"
-        >
-          Maison D'Adoration Pour les Nations.
-        </div>
+        <span class="flex items-center text-6xl sm:text-8xl h-font">
+          <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
+          <span class="text-gray-100">menag </span>
+          <span class="text-brand-primary">ecolo</span>
+        </span>
 
         <div
           class="tracking-widest text-lg mb-4 flex items-center justify-center"
@@ -96,7 +36,7 @@
               +243 995 216 163
             </a>
             <a
-              href="mailto:maisondadoration@gmail.com"
+              href="mailto:menage-ecolo@gmail.com"
               class="contact-box !text-gray-300"
             >
               <span

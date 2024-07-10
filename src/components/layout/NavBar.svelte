@@ -201,7 +201,7 @@
           Notre vision
         </a>
 
-        <a class="side-btn" href="/#mission">
+        <a class="side-btn" href="/#methode">
           <span class="material-symbols-outlined text-2xl mr-1"> roofing </span>
           Méthode
         </a>

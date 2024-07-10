@@ -13,7 +13,7 @@
 >
   <NavBar />
   <slot />
-  <Footer />
+  <!-- <Footer /> -->
 </div>
 
 <!-- For tailwind purge -->

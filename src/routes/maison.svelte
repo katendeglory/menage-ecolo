@@ -4,10 +4,10 @@
 </script>
 
 <svelte:head>
-  <title
-    >A Propos - Ménage Écolo - La propreté est un luxe à la portée de tout le
-    monde</title
-  >
+  <title>
+    A Propos - Ménage Écolo - La propreté est un luxe à la portée de tout le
+    monde
+  </title>
 </svelte:head>
 
 <MaisonVideo />

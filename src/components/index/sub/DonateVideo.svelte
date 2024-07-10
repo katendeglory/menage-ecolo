@@ -75,17 +75,6 @@
       </div>
     </Container>
   </div>
-
-  <div
-    class="pointer-events-none hidden md:block absolute bottom-0 left-0 right-0 w-full z-[20]"
-  >
-    <img src="/images/wave-haikei.svg" class="w-full" alt="pizza" />
-  </div>
-  <div
-    class="pointer-events-none md:hidden absolute bottom-0 left-0 right-0 w-full z-[20]"
-  >
-    <img src="/images/wave-haikei-mobile.svg" class="w-full" alt="pizza" />
-  </div>
 </section>
 
 <style>

@@ -3,16 +3,6 @@
 </script>
 
 <div class="relative showcase bg-[#111111] maison-bg min-h-screen">
-  <div class="hidden md:block absolute bottom-0 left-0 right-0 w-full">
-    <img src="/images/wave-haikei-white.svg" class="w-full" alt="pizza" />
-  </div>
-  <div class="md:hidden absolute bottom-0 left-0 right-0 w-full">
-    <img
-      src="/images/wave-haikei-white-mobile.svg"
-      class="w-full"
-      alt="pizza"
-    />
-  </div>
 
   <Container>
     <div

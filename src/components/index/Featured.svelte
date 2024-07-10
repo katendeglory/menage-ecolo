@@ -16,14 +16,14 @@
   };
 
   onMount(() => {
-    playVideo("trailer");
+    playVideo("trailer-2");
   });
 </script>
 
-<section class="showcase" id="home">
+<section class="showcase" id="methode">
   <div class="video-container">
-    <video id="trailer" muted autoplay loop playsinline>
-      <source src="/images/trailer.mp4" type="video/mp4" />
+    <video id="trailer-2" muted autoplay loop playsinline>
+      <source src="/images/trailer-2.mp4" type="video/mp4" />
     </video>
   </div>
   <div class="content text-gray-300">
@@ -41,43 +41,55 @@
             data-aos-duration="750"
             data-aos-delay="1000"
           >
-            <ion-icon name="logo-youtube" class="translate-y-2" />
-            Suivre MAN TV sur Youtube.
+            <span class="flex items-center text-7xl sm:text-9xl h-font">
+              <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
+              <span class="text-gray-100">menag </span>
+              <span class="text-brand-primary">ecolo</span>
+            </span>
           </h1>
-          <p
-            class="mb-5 text-gray-300"
+          <div
+            class="mb-5 text-gray-300 tracking-normal"
             data-aos="fade-right"
             data-aos-easing="ease-in-sine"
             data-aos-offset="200"
             data-aos-duration="750"
             data-aos-delay="1250"
           >
-            Ramener les Nations à genoux à la croix par l'Enseignement de la
-            Parole et la Puissance du Saint-Esprit. MAN TV mets à votre
-            disposition une vaste librairie de programmes édifiants.
-          </p>
+            <div class="text-brand-primary">
+              Comment atteindre nos objectifs ?
+            </div>
+            <div class="mt-2">
+              <div class="mt-2 sm:mt-1 text-[0.9rem]">
+                <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+                En amenant d'autres partenaires d'affaire
+              </div>
+              <div class="mt-2 sm:mt-1 text-[0.9rem]">
+                <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+                En rachetant le plus de PME que possible
+              </div>
+              <div class="mt-2 sm:mt-1 text-[0.9rem]">
+                <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+                En investissant dans les médias ( les pancartes, les affiches dans
+                les metros et les rues, les stations de train, les bus…), les réseaux
+                sociaux cibles( facebook, youtube…)
+              </div>
+            </div>
+          </div>
 
           <div class="flex items-center">
-            <div
-              class="w-14 h-14 rounded-full mr-3 border border-gray-300"
-              style="background-image: url(/images/favicon.png); background-size: cover; background-position: center;"
-              data-aos="fade-right"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="750"
-              data-aos-delay="1750"
-            />
-            <!--  -->
             <a
-              href="https://www.youtube.com/@mantv6688"
-              class="btn btn-primary tracking-wider !bg-[#000000] !py-4 !text-gray-300 !border-0"
+              href="/#quote"
+              class="btn btn-secondary h-font tracking-wider !bg-[#000000] !py-2 text-xl !text-gray-300 !border-0"
               target="_blank"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="750"
               data-aos-delay="1500"
             >
-              Suivre notre Chaine
-              <ion-icon name="play-circle" class="text-2xl ml-2" />
+              Demander Une Quotation
+              <span class="material-symbols-outlined text-4xl ml-2">
+                export_notes
+              </span>
             </a>
           </div>
         </div>
@@ -86,13 +98,6 @@
         />
       </div>
     </Container>
-  </div>
-
-  <div class="hidden md:block absolute bottom-0 left-0 right-0 w-full z-[20]">
-    <img src="/images/wave-haikei.svg" class="w-full" alt="pizza" />
-  </div>
-  <div class="md:hidden absolute bottom-0 left-0 right-0 w-full z-[20]">
-    <img src="/images/wave-haikei-mobile.svg" class="w-full" alt="pizza" />
   </div>
 </section>
 

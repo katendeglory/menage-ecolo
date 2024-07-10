@@ -228,14 +228,14 @@
   <Container>
     <SectionHeading text1="Notre" text2="Clientèle" />
 
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <!--  -->
       <div class="">
         <div
           class="h-[15rem] rounded-md cl-bg"
           style="background-image: url(/images/client-school.jpg);"
         />
-        <div class="mt-4 text-center manrope text-black">
+        <div class="mt-2 text-center manrope text-black">
           Les écoles & les centres éducatifs
         </div>
       </div>
@@ -245,7 +245,7 @@
           class="h-[15rem] rounded-md cl-bg"
           style="background-image: url(/images/client-restaurant.jpg);"
         />
-        <div class="mt-4 text-center manrope text-black">
+        <div class="mt-2 text-center manrope text-black">
           Les restaurants et fast-food
         </div>
       </div>
@@ -255,7 +255,7 @@
           class="h-[15rem] rounded-md cl-bg"
           style="background-image: url(/images/client-supermarket.jpg);"
         />
-        <div class="mt-4 text-center manrope text-black">
+        <div class="mt-2 text-center manrope text-black">
           Les supermarchés et épiceries
         </div>
       </div>
@@ -265,7 +265,7 @@
           class="h-[15rem] rounded-md cl-bg"
           style="background-image: url(/images/client-hospital.jpg);"
         />
-        <div class="mt-4 text-center manrope text-black">
+        <div class="mt-2 text-center manrope text-black">
           Les centres hospitaliers (dentisterie, opticien…)
         </div>
       </div>
@@ -275,7 +275,7 @@
           class="h-[15rem] rounded-md cl-bg"
           style="background-image: url(/images/client-office.jpg);"
         />
-        <div class="mt-4 text-center manrope text-black">
+        <div class="mt-2 text-center manrope text-black">
           Les bureaux (banques, centre d'appels, agences…)
         </div>
       </div>
@@ -285,7 +285,7 @@
           class="h-[15rem] rounded-md cl-bg"
           style="background-image: url(/images/client-house.jpg);"
         />
-        <div class="mt-4 text-center manrope text-black">
+        <div class="mt-2 text-center manrope text-black">
           Les résidences (maisons, condos en construction, apparts...)
         </div>
       </div>
