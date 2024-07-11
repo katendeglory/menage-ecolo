@@ -1,20 +1,19 @@
-// import * as ls from 'local-storage';
+let defautLang = "fr";
 
-// let defautLang = "fr";
+const t = (fr, en, es) => {
 
-// const t = ({ en, fr }) => {
+  let lang = localStorage.getItem('lang');
 
-//   let lang = localStorage.getItem('lang');
+  if (!lang) localStorage.setItem("lang", defautLang);
 
-//   if (!lang) localStorage.setItem("lang", defautLang);
+  if (lang !== "en" && lang !== "fr" && lang !== "es") localStorage.setItem("lang", defautLang);
 
-//   if (lang !== "en" && lang !== "fr") localStorage.setItem("lang", defautLang);
+  switch (lang) {
+    case "fr": return fr;
+    case "en": return en;
+    case "es": return es;
+    default: return fr;
+  }
+}
 
-//   switch (lang) {
-//     case "en": return en;
-//     case "fr": return fr;
-//     default: return en;
-//   }
-// }
-
-// export default t;
+export default t;

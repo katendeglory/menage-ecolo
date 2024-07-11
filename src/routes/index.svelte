@@ -7,6 +7,8 @@
   import Contact from "../components/index/Contact.svelte";
 </script>
 
+<!-- ({t("Bonjour", "Hello", "Hola")}) -->
+
 <svelte:head>
   <title>
     Acceuil - Ménage Écolo - La propreté est un luxe à la portée de tout le

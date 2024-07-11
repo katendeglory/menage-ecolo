@@ -1,4 +1,5 @@
 <script>
+  import t from "../../utils/t";
   import Container from "../utils/Container.svelte";
   // 1, 6, 8, 12
 </script>
