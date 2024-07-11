@@ -96,8 +96,8 @@
 
         <div class="hidden lg:flex items-center">
           <a
-            href="/#quote"
-            target="_blank"
+          href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
+          about="_blank"
             class="!text-base h-font btn btn-secondary !px-4 !py-1 mr-2 !text-white"
           >
             Demander une quotation
@@ -107,7 +107,7 @@
           </a>
           <a
             href="/#contact"
-            target="_blank"
+            
             class="!text-base h-font btn btn-white !px-4 !py-1"
           >
             Nous contacter
@@ -206,7 +206,8 @@
           Méthode
         </a>
 
-        <a class="side-btn col-span-full !bg-brand-primary" href="/#quote">
+        <a class="side-btn col-span-full !bg-brand-primary"               href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
+        about="_blank">
           Demander une quotation
           <span class="material-symbols-outlined text-2xl ml-2">
             export_notes

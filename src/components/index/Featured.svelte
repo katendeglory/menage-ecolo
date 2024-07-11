@@ -16,24 +16,24 @@
   };
 
   onMount(() => {
-    playVideo("trailer-2");
+    playVideo("trailer-01");
   });
 </script>
 
 <section class="showcase" id="methode">
   <div class="video-container">
-    <video id="trailer-2" muted autoplay loop playsinline>
-      <source src="/images/trailer-2.mp4" type="video/mp4" />
+    <video id="trailer-01" muted autoplay loop playsinline>
+      <source src="/images/trailer-01.mp4" type="video/mp4" />
     </video>
   </div>
   <div class="content text-gray-300">
     <Container>
       <div class="flex flex-col md:flex-row relative">
         <div
-          class="w-full h-screen lg:w-3/5 flex flex-col justify-center relative z-10"
+          class="w-full h-[100vh] lg:w-3/5 flex flex-col justify-center relative z-10"
         >
           <h1
-            class="mt-[-7.5rem] mb-5 h-font md:pt-10 text-6xl sm:text-6xl md:text-7xl lg:text-7xl !text-gray-300"
+            class="mb-5 h-font text-6xl sm:text-6xl md:text-7xl lg:text-7xl !text-gray-300"
             style="filter: drop-shadow(1px 1px 1px rgba(0,0,0,.35));"
             data-aos="zoom-out-down"
             data-aos-easing="ease-in-sine"
@@ -41,7 +41,7 @@
             data-aos-duration="750"
             data-aos-delay="1000"
           >
-            <span class="flex items-center text-7xl sm:text-9xl h-font">
+            <span class="flex items-center text-8xl sm:text-9xl h-font">
               <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
               <span class="text-gray-100">menag </span>
               <span class="text-brand-primary">ecolo</span>
@@ -78,9 +78,9 @@
 
           <div class="flex items-center">
             <a
-              href="/#quote"
+              href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
+              about="_blank"
               class="btn btn-secondary h-font tracking-wider !bg-[#000000] !py-2 text-xl !text-gray-300 !border-0"
-              target="_blank"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="750"
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div
-          class="w-full pb-12 md:pb-0 md:h-screen lg:w-2/5 flex items-center justify-center lg:justify-end relative z-10"
+          class="w-full pb-12 md:pb-0 md:h-[100vh] lg:w-2/5 flex items-center justify-center lg:justify-end relative z-10"
         />
       </div>
     </Container>

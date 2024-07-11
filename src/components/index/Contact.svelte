@@ -38,22 +38,22 @@
               >
                 phone_callback
               </span>
-              +243 995 216 163
+              +1 438-930-2992
             </a>
             <a
-              href="mailto:menage-ecolo@gmail.com"
+              href="mailto:info@menageecolo.ca"
               class="contact-box !text-brand-black"
             >
               <span
                 class="material-symbols-outlined mr-2 text-3xl text-brand-yellow"
               >
-                alternate_email
+                mail
               </span>
-              Envoyer un e-mail
+              info@menageecolo.ca
             </a>
 
             <a
-              href="https://api.whatsapp.com/send?phone=243995216163"
+              href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
               about="_blank"
               class="mt-4 btn btn-aurora !px-12 !py-1 h-[2.75rem] !text-white bg-gradient-to-r to-[#25D366] from-brand-primary"
             >

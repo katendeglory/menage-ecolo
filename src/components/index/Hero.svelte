@@ -61,8 +61,8 @@
             <div class="wrd-container flex items-center justify-center">
               <span>
                 <a
-                  href="/#quote"
-                  target="_blank"
+                  href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
+                  about="_blank"
                   class="btn btn-secondary h-font !text-xl !px-10 tracking-widest !w-[90vw] sm:!w-min"
                 >
                   Demander Une Quotation
@@ -77,7 +77,6 @@
               <span>
                 <a
                   href="/#contact"
-                  target="_blank"
                   class="btn btn-black h-font !text-xl !px-10 tracking-widest !w-[90vw] sm:!w-min"
                 >
                   Nous Contacter

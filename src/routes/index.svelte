@@ -1,4 +1,5 @@
 <script>
+  import SectionValeurs from "./../components/index/SectionValeurs.svelte";
   import Services from "./../components/index/Services.svelte";
   import Featured from "./../components/index/Featured.svelte";
   import SectionAbout from "./../components/index/SectionAbout.svelte";
@@ -18,6 +19,8 @@
 <SectionAbout />
 
 <Featured />
+
+<SectionValeurs />
 
 <!-- <Services /> -->
 
