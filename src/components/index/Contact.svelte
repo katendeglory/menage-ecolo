@@ -2,17 +2,17 @@
   import Container from "../utils/Container.svelte";
 </script>
 
-<div class="relative showcase bg-brand-white contact-bg">
+<div class="relative showcase bg-[#111111] contact-bg">
   <div
-    class="content flex items-center text-brand-black h-[75vh] pt-14 pb-8 md:pt-0 md:pb-0"
+    class="content flex items-center text-gray-300 h-[90vh] pt-14 pb-8 md:pt-0 md:pb-0"
   >
     <Container>
       <div class="mb-2">
         <span
-          class="flex items-center justify-center text-6xl sm:text-8xl h-font"
+          class="flex items-center justify-center text-6xl sm:text-8xl h-font drop-shadow-lg"
         >
           <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
-          <span class="text-brand-black">menag </span>
+          <span class="text-brand-white">menag </span>
           <span class="text-brand-primary">ecolo</span>
         </span>
 
@@ -29,23 +29,31 @@
 
         <div class="flex justify-center relative z-10">
           <div class="text-gray-200 text-sm md:text-base text-center">
-            <a
-              href="tel:+243 995 216 163"
-              class="contact-box !text-brand-black"
-            >
+            <a href="tel:+1438-930-2992" class="contact-box !text-gray-400">
               <span
-                class="material-symbols-outlined mr-2 text-3xl text-brand-yellow"
+                class="material-symbols-outlined mr-2 text-3xl text-brand-primary"
               >
                 phone_callback
               </span>
               +1 438-930-2992
             </a>
-            <a
-              href="mailto:info@menageecolo.ca"
-              class="contact-box !text-brand-black"
+            <span
+              href="tel:+243 995 216 163"
+              class="contact-box !text-gray-400"
             >
               <span
-                class="material-symbols-outlined mr-2 text-3xl text-brand-yellow"
+                class="material-symbols-outlined mr-2 text-3xl text-brand-primary"
+              >
+                location_on
+              </span>
+              Situé au Canada
+            </span>
+            <a
+              href="mailto:info@menageecolo.ca"
+              class="contact-box !text-gray-400"
+            >
+              <span
+                class="material-symbols-outlined mr-2 text-3xl text-brand-primary"
               >
                 mail
               </span>
@@ -64,6 +72,24 @@
         </div>
       </div>
     </Container>
+
+    <div class="absolute bottom-2 left-0 w-full">
+      <Container>
+        <div class="h-font flex items-center justify-between md:justify-start">
+          <div>&copy; 2024</div>
+          <a
+            class="md:whitespace-nowrap ml-2 text-right flex items-center"
+            target="_blank"
+            href="https://glorykatende.com"
+          >
+            🎨 Design By Glory K.
+            <span class="material-symbols-outlined text-3xl ml-1">
+              trending_flat
+            </span>
+          </a>
+        </div>
+      </Container>
+    </div>
   </div>
 </div>
 
@@ -76,7 +102,7 @@
   }
 
   .showcase {
-    height: 75vh;
+    height: 90vh;
     position: relative;
   }
 

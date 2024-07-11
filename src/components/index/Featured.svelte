@@ -41,7 +41,7 @@
             data-aos-duration="750"
             data-aos-delay="1000"
           >
-            <span class="flex items-center text-8xl sm:text-9xl h-font">
+            <span class="flex items-center text-7xl sm:text-9xl h-font">
               <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
               <span class="text-gray-100">menag </span>
               <span class="text-brand-primary">ecolo</span>

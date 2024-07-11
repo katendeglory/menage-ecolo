@@ -266,7 +266,7 @@
           style="background-image: url(/images/client-hospital.jpg);"
         />
         <div class="mt-2 text-center manrope text-black">
-          Les centres hospitaliers (dentisterie, opticien…)
+          Les centres hospitaliers : dentisterie, opticien…
         </div>
       </div>
       <!--  -->
@@ -276,7 +276,7 @@
           style="background-image: url(/images/client-office.jpg);"
         />
         <div class="mt-2 text-center manrope text-black">
-          Les bureaux (banques, centre d'appels, agences…)
+          Les bureaux : banques, centre d'appels, agences…
         </div>
       </div>
       <!--  -->
@@ -286,7 +286,7 @@
           style="background-image: url(/images/client-house.jpg);"
         />
         <div class="mt-2 text-center manrope text-black">
-          Les résidences (maisons, condos en construction, apparts...)
+          Les résidences : maisons, condos en construction, apparts...
         </div>
       </div>
       <!--  -->

@@ -617,6 +617,12 @@ select {
 .right-\[\.5rem\] {
   right: .5rem;
 }
+.bottom-2 {
+  bottom: 0.5rem;
+}
+.left-2 {
+  left: 0.5rem;
+}
 .z-30 {
   z-index: 30;
 }
@@ -1023,6 +1029,15 @@ select {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-t-2 {
+  border-top-width: 2px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+.border-t {
+  border-top-width: 1px;
+}
 .border-dotted {
   border-style: dotted;
 }
@@ -1062,6 +1077,19 @@ select {
 }
 .border-gray-600\/50 {
   border-color: rgb(75 85 99 / 0.5);
+}
+.border-brand-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(33 33 33 / var(--tw-border-opacity));
+}
+.border-brand-black\/50 {
+  border-color: rgb(33 33 33 / 0.5);
+}
+.border-brand-black\/20 {
+  border-color: rgb(33 33 33 / 0.2);
+}
+.border-brand-black\/10 {
+  border-color: rgb(33 33 33 / 0.1);
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -1114,6 +1142,13 @@ select {
 }
 .bg-brand-primary\/30 {
   background-color: rgb(249 168 37 / 0.3);
+}
+.bg-brand-primary\/50 {
+  background-color: rgb(249 168 37 / 0.5);
+}
+.bg-brand-blue-second {
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 59 110 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -1284,6 +1319,12 @@ select {
 .pt-10 {
   padding-top: 2.5rem;
 }
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
+}
 .text-center {
   text-align: center;
 }
@@ -1368,6 +1409,9 @@ select {
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+.text-\[0\.85rem\] {
+  font-size: 0.85rem;
 }
 .\!font-thin {
   font-weight: 100 !important;
@@ -1486,6 +1530,14 @@ select {
   --tw-text-opacity: 1 !important;
   color: rgb(249 168 37 / var(--tw-text-opacity)) !important;
 }
+.text-brand-white {
+  --tw-text-opacity: 1;
+  color: rgb(245 245 245 / var(--tw-text-opacity));
+}
+.\!text-gray-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(156 163 175 / var(--tw-text-opacity)) !important;
+}
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1551,6 +1603,10 @@ select {
 }
 .drop-shadow-md {
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .filter {

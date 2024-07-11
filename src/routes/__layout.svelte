@@ -4,7 +4,6 @@
   import "../styles/tailwind-output.css";
   /* JS IMPORTS */
   import NavBar from "../components/layout/NavBar.svelte";
-  import Footer from "../components/layout/Footer.svelte";
 </script>
 
 <div
@@ -13,7 +12,6 @@
 >
   <NavBar />
   <slot />
-  <Footer />
 </div>
 
 <!-- For tailwind purge -->

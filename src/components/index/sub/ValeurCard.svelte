@@ -19,15 +19,15 @@
       class:flex-col={breakL}
       class="flex flex-col items-center justify-center mb-6 sm:mb-3"
     >
-      <div class="font-extralight">{t1}</div>
-      <div class="font-light">{t2}</div>
+      <div class="font-light">{t1}</div>
+      <div class="font-normal">{t2}</div>
     </div>
   </div>
-  <div class="text-gray-700 text-[0.9rem] tracking-wide text-center">
+  <div class="text-gray-600 text-[0.85rem] tracking-wide text-center">
     {desc}
   </div>
   <div class="mt-4 flex items-center justify-center">
-    <div class="h-[1px] w-[8rem] bg-brand-primary/30"></div>
+    <div class="h-[1px] w-[8rem] bg-brand-primary/50"></div>
   </div>
 </div>
 
