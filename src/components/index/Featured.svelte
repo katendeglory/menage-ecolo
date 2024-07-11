@@ -77,9 +77,13 @@
               </div>
               <div class="mt-2 sm:mt-1 text-[0.9rem]">
                 <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-                En investissant dans les médias ( les pancartes, les affiches dans
-                les metros et les rues, les stations de train, les bus…), les réseaux
-                sociaux cibles( facebook, youtube…)
+                En investissant dans les médias : pancartes, affiches dans les metros,
+                rues, stations de train, bus…
+              </div>
+              <div class="mt-2 sm:mt-1 text-[0.9rem]">
+                <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+                En investissant dans les réseaux sociaux cibles : facebook, youtube,
+                twitter, instagram…
               </div>
             </div>
           </div>
@@ -87,7 +91,7 @@
           <div class="flex items-center">
             <a
               href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
-              about="_blank"
+              target="_blank"
               class="btn btn-secondary h-font tracking-wider !bg-[#000000] !py-2 text-xl !text-gray-300 !border-0"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
