@@ -16,21 +16,29 @@
   };
 
   onMount(() => {
-    playVideo("trailer-01");
+    playVideo("trailer-02-mobile");
+    playVideo("trailer-02-desktop");
   });
 </script>
 
 <section class="showcase" id="methode">
-  <div class="video-container">
-    <video id="trailer-01" muted autoplay loop playsinline>
-      <source src="/images/trailer-01.mp4" type="video/mp4" />
+  <!-- Mobile -->
+  <div class="video-container md:hidden">
+    <video id="trailer-02-mobile" muted autoplay loop playsinline>
+      <source src="/images/trailer-02-mobile.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <!-- Desktop -->
+  <div class="video-container hidden md:block">
+    <video id="trailer-02-desktop" muted autoplay loop playsinline>
+      <source src="/images/trailer-02-desktop.mp4" type="video/mp4" />
     </video>
   </div>
   <div class="content text-gray-300">
     <Container>
       <div class="flex flex-col md:flex-row relative">
         <div
-          class="w-full h-[100vh] lg:w-3/5 flex flex-col justify-center relative z-10"
+          class="w-full h-[90vh] lg:w-3/5 flex flex-col justify-center relative z-10"
         >
           <h1
             class="mb-5 h-font text-6xl sm:text-6xl md:text-7xl lg:text-7xl !text-gray-300"
@@ -94,7 +102,7 @@
           </div>
         </div>
         <div
-          class="w-full pb-12 md:pb-0 md:h-[100vh] lg:w-2/5 flex items-center justify-center lg:justify-end relative z-10"
+          class="w-full pb-12 md:pb-0 md:h-[90vh] lg:w-2/5 flex items-center justify-center lg:justify-end relative z-10"
         />
       </div>
     </Container>

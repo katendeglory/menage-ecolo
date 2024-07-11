@@ -2065,6 +2065,10 @@ select:focus, input[type="datetime-local"]:focus, input[type="text"]:focus, inpu
     bottom: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:inline {
     display: inline;
   }
