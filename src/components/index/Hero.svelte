@@ -58,12 +58,12 @@
           <div
             class="mt-12 sm:mt-4 flex flex-col sm:flex-row items-center sm:space-x-2 space-y-2 sm:space-y-0"
           >
-            <div class="wrd-container flex items-center justify-center">
-              <span>
+            <div class="wrd-container w-full flex items-center justify-center">
+              <span class="!w-full">
                 <a
                   href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
                   target="_blank"
-                  class="btn btn-secondary h-font !text-xl !px-10 tracking-widest !w-[90vw] sm:!w-min"
+                  class="btn btn-secondary h-font !text-xl !px-10 tracking-widest !w-full"
                 >
                   {t(
                     "Demander Une Quotation",
@@ -77,11 +77,11 @@
               </span>
             </div>
             <!--  -->
-            <div class="wrd-container flex items-center justify-center">
-              <span>
+            <div class="wrd-container w-full flex items-center justify-center">
+              <span class="!w-full">
                 <a
                   href="/#contact"
-                  class="btn btn-black h-font !text-xl !px-10 tracking-widest !w-[90vw] sm:!w-min"
+                  class="btn btn-black h-font !text-xl !px-10 tracking-widest !w-full"
                 >
                   {t("Nous Contacter", "Contact Us", "Contáctenos")}
                   <span class="material-symbols-outlined text-4xl ml-2">

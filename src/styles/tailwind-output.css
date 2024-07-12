@@ -914,6 +914,18 @@ select {
 .bg-brand-primary\/50 {
   background-color: rgb(249 168 37 / 0.5);
 }
+.bg-brand-blue-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(54 149 203 / var(--tw-bg-opacity));
+}
+.\!bg-brand-blue-primary {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(54 149 203 / var(--tw-bg-opacity)) !important;
+}
+.bg-teal-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1576,6 +1588,10 @@ select:focus, input[type="datetime-local"]:focus, input[type="text"]:focus, inpu
 
   .sm\:w-\[26rem\] {
     width: 26rem;
+  }
+
+  .sm\:\!w-full {
+    width: 100% !important;
   }
 
   .sm\:grid-cols-2 {
