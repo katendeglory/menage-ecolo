@@ -41,13 +41,13 @@
   let visionEN = [
     {
       icon: "ads_click",
-      t1: "ACCESSIBILITY",
-      t2: "UNIVERSAL",
+      t1: "UNIVERSAL",
+      t2: "ACCESSIBILITY",
       desc: `Offering affordable, high-quality housekeeping services for all types of households, regardless of income or size.`,
     },
     {
       icon: "event_available",
-      t1: "FLEXIBILITY",
+      t1: "FLEXIBILE",
       t2: "SCHEDULES",
       desc: `Offer flexible time slots for housekeeping services to accommodate guests' varying schedules.`,
     },
@@ -298,7 +298,10 @@
 <div id="clientele" />
 <div class="pb-10">
   <Container>
-    <SectionHeading text1="Notre" text2="Clientèle" />
+    <SectionHeading
+      text1={t("Notre", "Our", "Nuestra")}
+      text2={t("clientèle", "clientele", "clientes")}
+    />
 
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <!--  -->
@@ -308,7 +311,11 @@
           style="background-image: url(/images/client-school.jpg);"
         />
         <div class="mt-2 text-center manrope text-black">
-          Les écoles & les centres éducatifs
+          {t(
+            "Les écoles & les centres éducatifs",
+            "Schools & educational centers",
+            "Escuelas y centros educativos",
+          )}
         </div>
       </div>
       <!--  -->
@@ -318,7 +325,11 @@
           style="background-image: url(/images/client-restaurant.jpg);"
         />
         <div class="mt-2 text-center manrope text-black">
-          Les restaurants et fast-food
+          {t(
+            "Les restaurants et fast-food",
+            "Restaurants and fast food",
+            "Restaurantes y comida rápida",
+          )}
         </div>
       </div>
       <!--  -->
@@ -328,7 +339,11 @@
           style="background-image: url(/images/client-supermarket.jpg);"
         />
         <div class="mt-2 text-center manrope text-black">
-          Les supermarchés et épiceries
+          {t(
+            "Les supermarchés et épiceries",
+            "Supermarkets and grocery stores",
+            "Supermercados y tiendas de alimentación",
+          )}
         </div>
       </div>
       <!--  -->
@@ -338,7 +353,11 @@
           style="background-image: url(/images/client-hospital.jpg);"
         />
         <div class="mt-2 text-center manrope text-black">
-          Les centres hospitaliers : dentisterie, opticien…
+          {t(
+            "Les centres hospitaliers : dentisterie, opticien…",
+            "Hospitals: dentistry, opticians, etc.",
+            "Hospitales: odontología, ópticas, etc.",
+          )}
         </div>
       </div>
       <!--  -->
@@ -348,7 +367,11 @@
           style="background-image: url(/images/client-office.jpg);"
         />
         <div class="mt-2 text-center manrope text-black">
-          Les bureaux : banques, centre d'appels, agences…
+          {t(
+            "Les bureaux : banques, centre d'appels, agences…",
+            "Offices: banks, call centers, agencies, etc.",
+            "Oficinas: bancos, call center, agencias, etc.",
+          )}
         </div>
       </div>
       <!--  -->
@@ -358,7 +381,11 @@
           style="background-image: url(/images/client-house.jpg);"
         />
         <div class="mt-2 text-center manrope text-black">
-          Les résidences : maisons, condos en construction, apparts...
+          {t(
+            "Les résidences : maisons, condos en construction, apparts...",
+            "Residences: houses, condos under construction, apartments...",
+            "Residencias: casas, condominios en construcción, apartamentos...",
+          )}
         </div>
       </div>
       <!--  -->

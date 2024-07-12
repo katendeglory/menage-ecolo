@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import Container from "./../utils/Container.svelte";
+  import t from "../../utils/t";
 
   const playVideo = (id) => {
     let vid = document.getElementById(id);
@@ -63,25 +64,67 @@
             data-aos-duration="750"
             data-aos-delay="1250"
           >
+            {@html t(
+              `
             <div class="text-brand-primary">
-              Comment atteindre nos objectifs ?
+            Comment atteindre nos objectifs ?
             </div>
             <div class="mt-2">
-              <div class="mt-2 sm:mt-1 text-[0.9rem]">
-                <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-                En rachetant le plus de PME que possible
-              </div>
-              <div class="mt-2 sm:mt-1 text-[0.9rem]">
-                <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-                En investissant dans les médias : pancartes, affiches dans les metros,
-                rues, stations de train, bus…
-              </div>
-              <div class="mt-2 sm:mt-1 text-[0.9rem]">
-                <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-                En investissant dans les réseaux sociaux cibles : facebook, youtube,
-                twitter, instagram…
-              </div>
+            <div class="mt-2 sm:mt-1 text-[0.9rem]">
+            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+            En rachetant le plus de PME que possible
             </div>
+            <div class="mt-2 sm:mt-1 text-[0.9rem]">
+            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+            En investissant dans les médias : pancartes, affiches dans les metros,
+            rues, stations de train, bus…
+            </div>
+            <div class="mt-2 sm:mt-1 text-[0.9rem]">
+            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+            En investissant dans les réseaux sociaux cibles : facebook, youtube,
+            twitter, instagram…
+            </div>
+              `,
+              `
+            <div class="text-brand-primary">
+            How do we achieve our goals?
+            </div>
+            <div class="mt-2">
+            <div class="mt-2 sm:mt-1 text-[0.9rem]">
+            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+            By buying as many SMEs as possible
+            </div>
+            <div class="mt-2 sm:mt-1 text-[0.9rem]">
+            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+            By investing in the media: signs, posters in metros,
+            streets, train stations, buses…
+            </div>
+            <div class="mt-2 sm:mt-1 text-[0.9rem]">
+            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+            By investing in target social networks: Facebook, YouTube,
+            twitter, instagram...
+            </div>`,
+              `
+            <div class="text-brand-primary">
+            ¿Cómo podemos lograr nuestros objetivos?
+            </div>
+            <div clase="mt-2">
+            <div class="mt-2 sm:mt-1 text-[0.9rem]">
+            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+            Comprando tantas PYME como sea posible
+            </div>
+            <div class="mt-2 sm:mt-1 text-[0.9rem]">
+            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+            Invirtiendo en los medios: carteles, carteles en los metros,
+            calles, estaciones de tren, autobuses…
+            </div>
+            <div class="mt-2 sm:mt-1 text-[0.9rem]">
+            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
+            Invirtiendo en redes sociales objetivo: Facebook, YouTube,
+            twitter, instagram...
+            </div>
+              `,
+            )}
           </div>
 
           <div class="flex items-center">
@@ -94,7 +137,11 @@
               data-aos-duration="750"
               data-aos-delay="1500"
             >
-              Demander Une Quotation
+              {t(
+                "Demander Une Quotation",
+                "Request a Quote",
+                "Solicitar presupuesto",
+              )}
               <span class="material-symbols-outlined text-4xl ml-2">
                 export_notes
               </span>

@@ -101,7 +101,11 @@
             target="_blank"
             class="!text-base h-font btn btn-secondary !px-4 !py-1 mr-2 !text-white"
           >
-            Demander une quotation
+            {t(
+              "Demander Une Quotation",
+              "Request a Quote",
+              "Solicitar presupuesto",
+            )}
             <span class="material-symbols-outlined text-2xl ml-2">
               export_notes
             </span>
@@ -110,7 +114,7 @@
             href="/#contact"
             class="!text-base h-font btn btn-white !px-4 !py-1"
           >
-            Nous contacter
+            {t("Nous Contacter", "Contact Us", "Contáctenos")}
             <span class="material-symbols-outlined text-2xl ml-2">
               phone_in_talk
             </span>

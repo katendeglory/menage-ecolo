@@ -1,4 +1,5 @@
 <script>
+  import t from "../../utils/t";
   import Container from "../utils/Container.svelte";
 </script>
 
@@ -22,8 +23,11 @@
           <div
             class="text-base flex items-center justify-center tracking-wide text-center"
           >
-            <!-- « » -->
-            Utilisez les informations ci-bas pour nous contacter.
+            {t(
+              "Utilisez les informations ci-bas pour nous contacter.",
+              "Use the information below to contact us.",
+              "Utilice la siguiente información para contactarnos.",
+            )}
           </div>
         </div>
 
@@ -46,7 +50,7 @@
               >
                 location_on
               </span>
-              Situé au Canada
+              {t("Situé au Canada", "Located In Canada", "Ubicado en Canadá")}
             </span>
             <a
               href="mailto:info@menageecolo.ca"
