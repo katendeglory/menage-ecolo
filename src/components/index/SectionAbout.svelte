@@ -1,46 +1,192 @@
 <script>
+  import { onMount } from "svelte";
+  import VisionCard from "./sub/VisionCard.svelte";
+  import t from "../../utils/t";
   import Container from "../utils/Container.svelte";
   import SectionHeading from "../utils/SectionHeading.svelte";
+
+  let visionFR = [
+    {
+      icon: "ads_click",
+      t1: "ACCESSIBILITÉ",
+      t2: "UNIVERSELLE",
+      desc: `Offrir des services de ménage abordables et de haute qualité pour tous les types de foyers, indépendamment de leurs revenus ou de leur taille.`,
+    },
+    {
+      icon: "event_available",
+      t1: "FLEXIBILITÉ",
+      t2: "DES HORAIRES",
+      desc: `Proposer des plages horaires flexibles pour les services de ménage, afin de s'adapter aux emplois du temps variés des clients.`,
+    },
+    {
+      icon: "energy_savings_leaf",
+      t1: "ÉCOLOGIQUE",
+      t2: "& DURABLE",
+      desc: `Utiliser des produits de nettoyage écologiques et adopter des pratiques durables pour minimiser l'impact environnemental.`,
+    },
+    {
+      icon: "emoji_events",
+      t1: "FORMATION",
+      t2: "& PROFESSIONNALISME",
+      desc: `Former continuellement le personnel pour garantir un service de ménage professionnel, fiable et respectueux des standards de sécurité et de qualité.`,
+    },
+    {
+      icon: "instant_mix",
+      t1: "PERSONNALISATION",
+      t2: "DES SERVICES",
+      desc: `Offrir des options de ménage personnalisées pour répondre aux besoins spécifiques de chaque foyer, qu'il s'agisse de nettoyages réguliers, de nettoyages en profondeur ou de services spécifiques tels que le nettoyage après rénovation.`,
+    },
+  ];
+
+  let visionEN = [
+    {
+      icon: "ads_click",
+      t1: "ACCESSIBILITY",
+      t2: "UNIVERSAL",
+      desc: `Offering affordable, high-quality housekeeping services for all types of households, regardless of income or size.`,
+    },
+    {
+      icon: "event_available",
+      t1: "FLEXIBILITY",
+      t2: "SCHEDULES",
+      desc: `Offer flexible time slots for housekeeping services to accommodate guests' varying schedules.`,
+    },
+    {
+      icon: "energy_savings_leaf",
+      t1: "ECOLOGICAL",
+      t2: "& SUSTAINABLE",
+      desc: `Use eco-friendly cleaning products and adopt sustainable practices to minimize environmental impact.`,
+    },
+    {
+      icon: "emoji_events",
+      t1: "TRAINING",
+      t2: "& PROFESSIONALISM",
+      desc: `Continuously train staff to guarantee a professional, reliable cleaning service that respects safety and quality standards.`,
+    },
+    {
+      icon: "instant_mix",
+      t1: "CUSTOMIZED",
+      t2: "SERVICES",
+      desc: `Offering personalized cleaning options to meet the specific needs of each household, whether regular cleanings, deep cleanings or specific services such as post-renovation cleaning.`,
+    },
+  ];
+
+  let visionES = [
+    {
+      icon: "ads_click",
+      t1: "ACCESIBILIDAD",
+      t2: "UNIVERSAL",
+      desc: `Ofrecemos servicios de limpieza asequibles y de alta calidad para todo tipo de hogares, independientemente de sus ingresos o tamaño.`,
+    },
+    {
+      icon: "event_available",
+      t1: "FLEXIBILIDAD",
+      t2: "HORARIOS",
+      desc: `Ofrecer franjas horarias flexibles para los servicios de limpieza para adaptarse a los diferentes horarios de los huéspedes.`,
+    },
+    {
+      icon: "energy_savings_leaf",
+      t1: "ECOLÓGICO",
+      t2: "& SOSTENIBLE",
+      desc: `Utilice productos de limpieza ecológicos y adopte prácticas sostenibles para minimizar el impacto ambiental.`,
+    },
+    {
+      icon: "emoji_events",
+      t1: "ENTRENAMIENTO",
+      t2: "& PROFESIONALISMO",
+      desc: `Capacitar continuamente al personal para garantizar un servicio de limpieza profesional, confiable y que respete los estándares de seguridad y calidad.`,
+    },
+    {
+      icon: "instant_mix",
+      t1: "PERSONALIZACIÓN",
+      t2: "SERVICIOS",
+      desc: `Ofrecer opciones de limpieza personalizadas para satisfacer las necesidades específicas de cada hogar, ya sean limpiezas periódicas, limpiezas profundas o servicios específicos como limpieza post-renovación.`,
+    },
+  ];
+
+  let vision = [];
+
+  const setVisionData = () => {
+    let lang = localStorage.getItem("lang");
+    if (lang == "en") vision = [...visionEN];
+    else if (lang == "es") vision = [...visionES];
+    else vision = [...visionFR];
+  };
+
+  onMount(() => {
+    setVisionData();
+  });
 </script>
 
 <!-- A Props -->
-<div id="about"></div>
+<div id="about" />
 <div class="relative py-10 bg-[#111111] patterns text-gray-300">
-  <!-- About Section -->
   <Container overflowHidden={false}>
     <div class="grid grid-cols-1 md:grid-cols-2">
-      <div class="md:pr-10">
-        <SectionHeading text1="Qui sommes" text2="Nous ?" />
+      <div class="md:pr-10 flex flex-col justify-center">
+        <SectionHeading
+          text1={t("Qui sommes", "Who Are", "Quiénes ")}
+          text2={t("Nous ?", "We ?", "somos ?")}
+          padded={false}
+        />
 
         <div class="next-g-bg">
-          <div class="max-w-4xl mx-auto">
+          <div class="max-w-4xl mx-auto flex items-center">
             <div class="!text-justify">
-              Fondée au Québec, <span class="text-brand-primary">
-                Ménage Écolo
-              </span>
+              {@html t(
+                `
+              Fondée au Québec, <span class="text-brand-primary">Ménage Écolo</span>
               incarne l'excellence et l'audace, en ayant pour ambition une expansion
               tant nationale qu'internationale dans le secteur de l'entretien ménager
               résidentiel, commercial et institutionnel.
-              <div class="mt-4"></div>
+              <div class="mt-4" />
               Nos équipes combinent une profonde expertise dans le domaine de l'entretien
               ménager, une compétence affirmée en stratégies numériques et développement
               technologique et éco-responsable.
-              <div class="mt-4"></div>
+              <div class="mt-4" />
               Notre vision est de révolutionner les standards de l'entretien ménager
               en offrant des solutions et des approches novatrices.
-              <div class="mt-4"></div>
-            </div>
+              <div class="mt-4" />
+              `,
+                `
+              Founded in Quebec, <span class="text-brand-primary">Ménage Écolo</span>
+              embodies excellence and audacity, with the ambition of expansion
+              both national and international in the housekeeping sector
+              residential, commercial and institutional.
+              <div class="mt-4" />
+              Our teams combine deep expertise in the field of maintenance
+              housekeeping, proven skills in digital strategies and development
+              technological and eco-responsible.
+              <div class="mt-4" />
+              Our vision is to revolutionize the standards of housekeeping
+              by offering innovative solutions and approaches.
+              <div class="mt-4" />
+              `,
+                `
+              Fundada en Quebec, <span class="text-brand-primary">Ménage Écolo</span>
+              encarna la excelencia y la audacia, con la ambición de expansión
+              tanto nacional como internacional en el sector del housekeeping
+              residencial, comercial e institucional.
+              <div class="mt-4" />
+              Nuestros equipos combinan una profunda experiencia en el campo del mantenimiento.
+              limpieza, habilidades comprobadas en estrategias y desarrollo digitales
+              Tecnológico y eco-responsable.
+              <div class="mt-4" />
+              Nuestra visión es revolucionar los estándares de limpieza.
+              ofreciendo soluciones y enfoques innovadores.
+              <div class="mt-4" />
+              `,
+              )}
 
-            <div class="flex flex-col items-center justify-center">
-              <div
-                class="pr-circle rounded-full flex items-center justify-center h-[6rem] w-[6rem] mr-2"
+              <a
+                href="/#mission"
+                class="mt-2 btn btn-secondary h-font !text-xl !px-10 !py-2 tracking-widest !w-full"
               >
-                <div
-                  class="rounded-full h-[5.75rem] w-[5.75rem] overflow-hidden bg-center bg-cover"
-                  style="background-image: url(/images/israelk-5.jpg);"
-                />
-              </div>
-              <div class="mt-2 font-normal">Jenny Rehema, Fondatrice.</div>
+                {t("Notre mission", "Our mission", "Nuestra misión")}
+                <span class="material-symbols-outlined text-3xl ml-2">
+                  step_into
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -49,7 +195,7 @@
       <div class="flex items-center justify-center mt-10 sm:mt-0">
         <!--  -->
         <div
-          class="h-[45vh] md:h-[75vh] w-full rounded-xl"
+          class="h-[45vh] md:h-[70vh] w-full rounded-xl"
           style="background-image: url(/images/background-03.jpg); background-size: cover; background-position: top;"
         >
           <!--  -->
@@ -60,170 +206,96 @@
 </div>
 
 <!-- Mission -->
-<div id="mission"></div>
+<div id="mission" />
 <div class="py-10">
   <Container>
-    <SectionHeading text1="Notre" text2="Mission" />
+    <SectionHeading
+      text1={t("Notre", "Our", "Nuestra")}
+      text2={t("Mission", "Mission", "Misión")}
+    />
 
-    <div class="text-center">
+    {@html t(
+      `
+      <div class="text-center">
       « La propreté est un luxe à la portée de tout le monde »
       <span class="text-center text-brand-primary hidden md:inline">
         — Diane de Beausacq.
       </span>
-    </div>
+      </div>
 
-    <div class="mt-4 text-center text-brand-primary md:hidden">
+      <div class="mt-4 text-center text-brand-primary md:hidden">
       — Diane de Beausacq.
-    </div>
+      </div>
 
-    <div class="mt-4 text-center">
+      <div class="mt-4 text-center">
       Notre mission est d'offrir des services de ménage accessibles à tous,
       facilitant ainsi la conciliation entre travail et famille.
-    </div>
+      </div>
+      `,
+      `
+      <div class="text-center">
+      "Cleanliness is a luxury within everyone’s reach"
+      <span class="text-center text-brand-primary hidden md:inline">
+      — Diane de Beausacq.
+      </span>
+      </div>
+
+      <div class="mt-4 text-center text-brand-primary md:hidden">
+      — Diane de Beausacq.
+      </div>
+
+      <div class="mt-4 text-center">
+      Our mission is to offer cleaning services accessible to all,
+      thus facilitating the balance between work and family.
+      </div>
+      `,
+      `
+      <div class="text-center">
+      "La limpieza es un lujo al alcance de todos"
+      <span class="text-center text-brand-primary md oculto:en línea">
+      —Diana de Beausacq.
+      </span>
+      </div>
+      
+      <div class="mt-4 text-center text-brand-primary md:hidden">
+      —Diana de Beausacq.
+      </div>
+      
+      <div class="mt-4 text-center">
+      Nuestra misión es ofrecer servicios de limpieza accesibles para todos,
+      facilitando así el equilibrio entre trabajo y familia.
+      </div>
+      `,
+    )}
   </Container>
 </div>
 
 <!-- Vision -->
-<div id="vision"></div>
+<div id="vision" />
 <div class="pt-20 pb-10 bg-[#111111] patterns">
-  <SectionHeading text1="" text2="Vision" breakWord />
+  <SectionHeading text1="" text2={t("Vision", "Vision", "Visión")} breakWord />
 
   <Container>
     <div class="text-gray-300">
-      La vision de Ménage écolo se resume en 5 points:
-      <div class="mt-4"></div>
+      {t(
+        "La vision de Ménage écolo se resume en 5 points:",
+        "The vision of Ménage Écolo can be summed up in 5 points:",
+        "La visión de Ménage Écolo se puede resumir en 5 puntos:",
+      )}
+
+      <div class="mt-4" />
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4">
-        <!--  -->
-        <div
-          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
-        >
-          <div
-            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
-          >
-            <span
-              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
-            >
-              ads_click
-            </span>
-            <span class="font-extralight mr-2">Accessibilité</span>
-            <span
-              class="font-medium underline underline-offset-8 decoration-white/25"
-              >universelle</span
-            >
-          </div>
-          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
-            Offrir des services de ménage abordables et de haute qualité pour
-            tous les types de foyers, indépendamment de leurs revenus ou de leur
-            taille.
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
-        >
-          <div
-            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
-          >
-            <span
-              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
-            >
-              event_available
-            </span>
-            <span class="font-extralight mr-2">Flexibilité</span>
-            <span
-              class="font-medium underline underline-offset-8 decoration-white/25"
-              >des horaires</span
-            >
-          </div>
-          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
-            Proposer des plages horaires flexibles pour les services de ménage,
-            afin de s'adapter aux emplois du temps variés des clients.
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
-        >
-          <div
-            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
-          >
-            <span
-              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
-            >
-              energy_savings_leaf
-            </span>
-            <span class="font-extralight mr-2">Écologique</span>
-            <span
-              class="font-medium underline underline-offset-8 decoration-white/25"
-            >
-              & durable
-            </span>
-          </div>
-          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
-            Utiliser des produits de nettoyage écologiques et adopter des
-            pratiques durables pour minimiser l'impact environnemental.
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
-        >
-          <div
-            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
-          >
-            <span
-              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
-            >
-              emoji_events
-            </span>
-            <span class="font-extralight mr-2">Formation </span>
-            <span
-              class="font-medium underline underline-offset-8 decoration-white/25"
-            >
-              & professionnalisme
-            </span>
-          </div>
-          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
-            Former continuellement le personnel pour garantir un service de
-            ménage professionnel, fiable et respectueux des standards de
-            sécurité et de qualité.
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="patterns-2 px-4 py-4 rounded-md bg-[#191919] border border-gray-700/20 shadow-lg"
-        >
-          <div
-            class="uppercase k-font flex items-center text-2xl sm:text-3xl flex-wrap tracking-widest"
-          >
-            <span
-              class="text-3xl material-symbols-outlined text-brand-primary mr-2"
-            >
-              instant_mix
-            </span>
-            <span class="font-extralight mr-2">Personnalisation</span>
-            <span
-              class="font-medium underline underline-offset-8 decoration-white/25"
-            >
-              des services
-            </span>
-          </div>
-          <div class="mt-8 sm:mt-4 text-gray-300 text-[0.9rem] tracking-wide">
-            Offrir des options de ménage personnalisées pour répondre aux
-            besoins spécifiques de chaque foyer, qu'il s'agisse de nettoyages
-            réguliers, de nettoyages en profondeur ou de services spécifiques
-            tels que le nettoyage après rénovation.
-          </div>
-        </div>
-        <!--  -->
+        {#each vision as v (v)}
+          <VisionCard {...v} />
+        {/each}
       </div>
     </div>
   </Container>
 </div>
 
 <!-- CLientele -->
-<div id="clientele"></div>
+<div id="clientele" />
 <div class="pb-10">
   <Container>
     <SectionHeading text1="Notre" text2="Clientèle" />

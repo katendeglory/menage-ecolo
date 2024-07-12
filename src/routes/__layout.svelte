@@ -1,4 +1,5 @@
 <script>
+  import LangButton from "./../components/utils/LangButton.svelte";
   /* STYLES IMPORTS */
   import "../styles/app.css";
   import "../styles/tailwind-output.css";
@@ -13,6 +14,8 @@
   <NavBar />
   <slot />
 </div>
+
+<LangButton />
 
 <!-- For tailwind purge -->
 <div class="scroll-smooth" />

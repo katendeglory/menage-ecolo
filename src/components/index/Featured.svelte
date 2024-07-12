@@ -69,10 +69,6 @@
             <div class="mt-2">
               <div class="mt-2 sm:mt-1 text-[0.9rem]">
                 <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-                En amenant d'autres partenaires d'affaire
-              </div>
-              <div class="mt-2 sm:mt-1 text-[0.9rem]">
-                <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
                 En rachetant le plus de PME que possible
               </div>
               <div class="mt-2 sm:mt-1 text-[0.9rem]">

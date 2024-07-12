@@ -1,31 +1,29 @@
 <script>
+  import { onMount } from "svelte";
   import ValeurCard from "./sub/ValeurCard.svelte";
   import Container from "../utils/Container.svelte";
   import SectionHeading from "../utils/SectionHeading.svelte";
+  import t from "../../utils/t";
 
-  const valeurs = [
+  let valeursFR = [
     {
       icon: "handshake",
-      t1: "Trans",
-      t2: "parence",
+      t1: "Transparence",
       desc: `Communiquer clairement avec les clients sur les services offerts, les tarifs et les procédures.`,
     },
     {
       icon: "person_play",
-      t1: "Adapta",
-      t2: "bilité",
+      t1: "Adaptabilité",
       desc: `Être flexible et capable de s'adapter aux besoins spécifiques et changeants de chaque client.`,
     },
     {
       icon: "health_and_safety",
-      t1: "Sécu",
-      t2: "rité",
+      t1: "Sécurité",
       desc: `Prioriser la sécurité des clients et des employés en utilisant des pratiques de nettoyage sûres et en respectant les réglementations sanitaires.`,
     },
     {
       icon: "pacemaker",
-      t1: "Empa",
-      t2: "thie",
+      t1: "Empathie",
       desc: `Comprendre et répondre aux préoccupations et aux attentes des clients avec sensibilité et considération.`,
     },
     {
@@ -37,8 +35,7 @@
     },
     {
       icon: "visibility_lock",
-      t1: "Confiden",
-      t2: "tialité",
+      t1: "Confidentialité",
       desc: `Garantir que toutes les informations des clients et les détails de leur domicile restent strictement confidentiels.`,
     },
     {
@@ -70,12 +67,155 @@
       desc: `S'efforcer d'offrir une expérience client exceptionnelle, en répondant rapidement et efficacement aux demandes et aux préoccupations.`,
     },
   ];
+
+  let valeursEN = [
+    {
+      icon: "handshake",
+      t1: "Transparency",
+      desc: `Communicate clearly with customers about the services offered, rates and procedures.`,
+    },
+    {
+      icon: "person_play",
+      t1: "Adaptability",
+      desc: `Be flexible and able to adapt to the specific and changing needs of each client.`,
+    },
+    {
+      icon: "health_and_safety",
+      t1: "Security",
+      desc: `Prioritize customer and employee safety by using safe cleaning practices and following health regulations.`,
+    },
+    {
+      icon: "pacemaker",
+      t1: "Empathy",
+      desc: `Understand and respond to customer concerns and expectations with sensitivity and consideration.`,
+    },
+    {
+      icon: "communities",
+      t1: "community",
+      t2: "Commitment",
+      breakL: true,
+      desc: `Actively participate in the life of the local community and support local initiatives.`,
+    },
+    {
+      icon: "visibility_lock",
+      t1: "Confidentiality",
+      desc: `Ensure that all customer information and home details remain strictly confidential.`,
+    },
+    {
+      icon: "model_training",
+      t1: "continuous",
+      t2: "Innovation",
+      breakL: true,
+      desc: `Research and adopt the latest innovations in cleaning to improve efficiency and customer satisfaction.`,
+    },
+    {
+      icon: "cycle",
+      t1: "social",
+      t2: "Responsibility",
+      breakL: true,
+      desc: `Adopt ethical business practices and contribute positively to society.`,
+    },
+    {
+      icon: "groups_2",
+      t1: "team",
+      t2: "Cohesion",
+      breakL: true,
+      desc: `Foster a harmonious and collaborative work environment where each employee feels valued and supported.`,
+    },
+    {
+      icon: "award_star",
+      t1: "Excellent ",
+      t2: "customer service",
+      breakL: true,
+      desc: `Strive to provide an exceptional customer experience, responding quickly and efficiently to requests and concerns.`,
+    },
+  ];
+
+  let valeursES = [
+    {
+      icon: "handshake",
+      t1: "Transparencia",
+      desc: `Comunicar claramente con los clientes sobre los servicios ofrecidos, tarifas y procedimientos.`,
+    },
+    {
+      icon: "person_play",
+      t1: "Adaptabilidad",
+      desc: `Ser flexible y capaz de adaptarse a las necesidades específicas y cambiantes de cada cliente.`,
+    },
+    {
+      icon: "health_and_safety",
+      t1: "Seguridad",
+      desc: `Priorizar la seguridad de clientes y empleados mediante el uso de prácticas de limpieza seguras y el cumplimiento de las normas de salud.`,
+    },
+    {
+      icon: "pacemaker",
+      t1: "Empatía",
+      desc: `Comprender y responder a las inquietudes y expectativas de los clientes con sensibilidad y consideración.`,
+    },
+    {
+      icon: "communities",
+      t1: "Compromiso",
+      t2: "comunidad",
+      breakL: true,
+      desc: `Participar activamente en la vida de la comunidad local y apoyar las iniciativas locales.`,
+    },
+    {
+      icon: "visibility_lock",
+      t1: "Confidencialidad",
+      desc: `Asegúrese de que toda la información del cliente y los detalles del hogar permanezcan estrictamente confidenciales.`,
+    },
+    {
+      icon: "model_training",
+      t1: "Innovación",
+      t2: "continuar",
+      breakL: true,
+      desc: `Investigar y adoptar las últimas innovaciones en limpieza para mejorar la eficiencia y la satisfacción del cliente.`,
+    },
+    {
+      icon: "cycle",
+      t1: "Responsabilidad",
+      t2: "social",
+      breakL: true,
+      desc: `Adoptar prácticas comerciales éticas y contribuir positivamente a la sociedad.`,
+    },
+    {
+      icon: "groups_2",
+      t1: "Cohesión",
+      t2: "equipo",
+      breakL: true,
+      desc: `Fomentar un ambiente de trabajo armonioso y colaborativo donde cada empleado se sienta valorado y apoyado.`,
+    },
+    {
+      icon: "award_star",
+      t1: "Excelencia de",
+      t2: "servicio al cliente",
+      breakL: true,
+      desc: `Esforzarse por brindar una experiencia excepcional al cliente, respondiendo rápida y eficientemente a las solicitudes e inquietudes.`,
+    },
+  ];
+
+  let valeurs = [];
+
+  const setValeursData = () => {
+    let lang = localStorage.getItem("lang");
+    if (lang == "en") valeurs = [...valeursEN];
+    else if (lang == "es") valeurs = [...valeursES];
+    else valeurs = [...valeursFR];
+  };
+
+  onMount(() => {
+    setValeursData();
+  });
 </script>
 
 <!-- Vision -->
 <div id="valeurs"></div>
 <div class="pt-20 pb-10 bg-white patterns">
-  <SectionHeading text1="Nos" text2="Valeurs" breakWord />
+  <SectionHeading
+    text1={t("Nos", "Our", "Nuestra")}
+    text2={t("Valeurs", "Values", "Valores")}
+    breakWord
+  />
 
   <Container>
     <div class="text-gray-800">

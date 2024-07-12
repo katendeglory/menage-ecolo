@@ -1,7 +1,6 @@
 <script>
   import t from "../../utils/t";
   import Container from "../utils/Container.svelte";
-  // 1, 6, 8, 12
 </script>
 
 <div class="pb-16 hidden" />
@@ -45,12 +44,12 @@
               <span></span>
               <span></span>
               <span></span>
-              <span>« La propreté</span>
-              <span>est</span>
-              <span>un luxe</span>
-              <span>à la portée</span>
-              <span>de tout</span>
-              <span>le monde »</span>
+              <span>« {t("La propreté", "Cleanliness", "La limpieza")} </span>
+              <span>{t("est", "is", "es")} </span>
+              <span>{t("un luxe", "a luxury", "un lujo")}</span>
+              <span>{t("à la portée", "within", "al alcance")}</span>
+              <span>{t("de tout", "everyone's", "de")} </span>
+              <span>{t(" le monde", "reach", "todos.")} »</span>
               <span></span>
               <span></span>
             </div>
@@ -66,7 +65,11 @@
                   target="_blank"
                   class="btn btn-secondary h-font !text-xl !px-10 tracking-widest !w-[90vw] sm:!w-min"
                 >
-                  Demander Une Quotation
+                  {t(
+                    "Demander Une Quotation",
+                    "Request a Quote",
+                    "Solicitar presupuesto",
+                  )}
                   <span class="material-symbols-outlined text-4xl ml-2">
                     export_notes
                   </span>
@@ -80,7 +83,7 @@
                   href="/#contact"
                   class="btn btn-black h-font !text-xl !px-10 tracking-widest !w-[90vw] sm:!w-min"
                 >
-                  Nous Contacter
+                  {t("Nous Contacter", "Contact Us", "Contáctenos")}
                   <span class="material-symbols-outlined text-4xl ml-2">
                     phone_in_talk
                   </span>

@@ -5,11 +5,13 @@
   export let secondColorClass;
   export let breakWord = false;
   export let id = "";
+  export let padded = true;
 </script>
 
 <div
   {id}
-  class={`h-font text-center pt-10 pb-8 text-5xl lg:text-6xl justify-center flex ${
+  class:pt-10={padded}
+  class={`h-font text-center pb-8 text-5xl lg:text-6xl justify-center flex ${
     breakWord && "flex-col md:flex-row"
   }`}
 >

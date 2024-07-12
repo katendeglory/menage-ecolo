@@ -20,7 +20,9 @@
       class="flex flex-col items-center justify-center mb-6 sm:mb-3"
     >
       <div class="font-light">{t1}</div>
-      <div class="font-normal">{t2}</div>
+      {#if t2}
+        <div class="font-normal">{t2}</div>
+      {/if}
     </div>
   </div>
   <div class="text-gray-600 text-[0.85rem] tracking-wide text-center">

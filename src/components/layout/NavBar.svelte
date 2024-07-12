@@ -4,6 +4,7 @@
   import get from "lodash.get";
   import config from "../../stores/config";
   import { slide, fly } from "svelte/transition";
+  import t from "../../utils/t";
 
   let PWAInstallBtn;
   let clickListener;
@@ -132,11 +133,21 @@
         </span>
 
         <div class="hidden lg:flex text-[0.9rem]">
-          <a class="nav mr-6 manrope" href="/#about"> A propos </a>
-          <a class="nav mr-6 manrope" href="/#mission"> Notre mission </a>
-          <a class="nav mr-6 manrope" href="/#vision"> Notre vision </a>
-          <a class="nav mr-6 manrope" href="/#valeurs"> Nos valeurs </a>
-          <a class="nav mr-6 manrope" href="/#clientele"> Notre clientèle </a>
+          <a class="nav mr-6 manrope" href="/#about">
+            {t("À Propos", "About", "A Proposito")}
+          </a>
+          <a class="nav mr-6 manrope" href="/#mission">
+            {t("Notre mission", "Our mission", "Nuestra misión")}
+          </a>
+          <a class="nav mr-6 manrope" href="/#vision">
+            {t("Notre vision", "Our vision", "Nuestra visión")}
+          </a>
+          <a class="nav mr-6 manrope" href="/#valeurs">
+            {t("Nos valeurs", "Our values", "Nuestra valores")}
+          </a>
+          <a class="nav mr-6 manrope" href="/#clientele">
+            {t("Notre clientèle", "Our clientele", "Nuestra clientes")}
+          </a>
         </div>
 
         <div class="">
@@ -171,38 +182,38 @@
           <span class="material-symbols-outlined text-2xl mr-1">
             home_app_logo
           </span>
-          Acceuil
+          {t("Acceuil", "Home", "Hogar")}
         </a>
 
         <a class="side-btn" href="/#mission">
           <span class="material-symbols-outlined text-2xl mr-1">
             list_alt
           </span>
-          Notre mission
+          {t("Mission", "Mission", "Misión")}
         </a>
 
         <a class="side-btn" href="/#contact">
           <span class="material-symbols-outlined text-2xl mr-1">
             phone_in_talk
           </span>
-          Contact
+          {t("Contact", "Contact", "Contactar")}
         </a>
 
         <a class="side-btn" href="/#about">
           <span class="material-symbols-outlined text-2xl mr-1">
             indeterminate_question_box
           </span>
-          A propos
+          {t("À Propos", "About", "A Proposito")}
         </a>
 
         <a class="side-btn" href="/#vision">
           <span class="material-symbols-outlined text-2xl mr-1"> target </span>
-          Notre vision
+          {t("Notre vision", "Our Vision", "Nuestra visión")}
         </a>
 
         <a class="side-btn" href="/#methode">
           <span class="material-symbols-outlined text-2xl mr-1"> roofing </span>
-          Méthode
+          {t("Méthode", "Method", "Método")}
         </a>
 
         <a
@@ -210,7 +221,11 @@
           href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
           target="_blank"
         >
-          Demander une quotation
+          {t(
+            "Demander Une Quotation",
+            "Request a Quote",
+            "Solicitar presupuesto",
+          )}
           <span class="material-symbols-outlined text-2xl ml-2">
             export_notes
           </span>
@@ -218,13 +233,13 @@
 
         <a class="side-btn" href="/#valeurs">
           <span class="material-symbols-outlined text-2xl mr-1"> trophy </span>
-          Nos valeurs
+          {t("Nos valuers", "Our values", "Nuestros valores")}
         </a>
         <a class="side-btn" href="/#clientele">
           <span class="material-symbols-outlined text-2xl mr-1">
             speaker_notes
           </span>
-          Clientèle
+          {t("Clientèle", "Clientele", "Clientelas")}
         </a>
       </div>
 
