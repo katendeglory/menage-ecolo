@@ -149,10 +149,10 @@
               <div class="mt-4" />
               `,
                 `
-              Founded in Quebec, <span class="text-brand-primary">Ménage Écolo</span>
-              embodies excellence and audacity, with the ambition of expansion
-              both national and international in the housekeeping sector
-              residential, commercial and institutional.
+              Founded in Quebec, <span class="text-brand-primary">Ménage Écolo</span> embodies 
+              excellence and audacity, with the ambition of a national and international expansion
+              in the housekeeping section for residential, commercial and institutional areas.
+
               <div class="mt-4" />
               Our teams combine deep expertise in the field of maintenance
               housekeeping, proven skills in digital strategies and development
