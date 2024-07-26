@@ -8,6 +8,10 @@
       .b {
         fill-rule: evenodd;
       }
+
+      .gkk{
+        fill-rule: evenodd;
+      }
     </style>
   </defs>
   <g class="a" transform="translate(48.006 -0.008)">
