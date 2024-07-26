@@ -7,8 +7,6 @@
   import t from "../utils/t";
 </script>
 
-<!-- ({t("Bonjour", "Hello", "Hola")}) -->
-
 <svelte:head>
   <title>
     {t(

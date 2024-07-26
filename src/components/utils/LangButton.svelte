@@ -10,7 +10,7 @@
 
 <button
   on:click={() => (showLang = true)}
-  class="fixed bottom-2 right-2 btn !px-2 !py-1 !bg-[#111111] !text-white shadow-md border border-gray-50/10"
+  class="z-[1000] fixed bottom-2 right-2 btn !px-2 !py-1 !bg-[#111111] !text-white shadow-md border border-gray-50/10"
 >
   <span id="side-menu" class="material-symbols-outlined text-3xl">
     language

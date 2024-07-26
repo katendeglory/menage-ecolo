@@ -89,10 +89,8 @@
   <Container overflowHidden={false}>
     <div id="inner-header" class="h-16 sm:h-32 transition-all duration-500">
       <div class="h-1/2 hidden sm:flex justify-between items-center">
-        <a class="flex items-center text-3xl sm:text-4xl h-font" href="/#home">
-          <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
-          <span>menag </span>
-          <span class="text-brand-primary">ecolo</span>
+        <a class="flex items-center" href="/#home">
+          <img src="/favicon-white.png" class="w-14 mr-2" alt="home" />
         </a>
 
         <div class="hidden lg:flex items-center">
@@ -130,10 +128,8 @@
           <!-- Acceuil  -->
         </a>
 
-        <span class="flex items-center sm:hidden text-3xl sm:text-4xl h-font">
-          <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
-          <span class="text-gray-100">menag </span>
-          <span class="text-brand-primary">ecolo</span>
+        <span class="flex items-center sm:hidden">
+          <img src="/banner-white.png" class="h-10 mr-2" alt="home" />
         </span>
 
         <div class="hidden lg:flex text-[0.9rem]">
@@ -251,9 +247,7 @@
         class="mt-4 flex items-center justify-between space-x-2 !text-gray-50"
       >
         <span class="flex items-center text-3xl sm:text-4xl h-font">
-          <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
-          <span class="text-gray-100">menag </span>
-          <span class="text-brand-primary">ecolo</span>
+          <img src="/banner-white.png" class="h-14 mr-2" alt="home" />
         </span>
 
         <!-- <a target="blank" href="/#home">

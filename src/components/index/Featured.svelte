@@ -50,10 +50,12 @@
             data-aos-duration="750"
             data-aos-delay="1000"
           >
-            <span class="flex items-center text-7xl sm:text-9xl h-font">
-              <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
-              <span class="text-gray-100">menag </span>
-              <span class="text-brand-primary">ecolo</span>
+            <span class="flex items-center">
+              <img
+                src="/banner-white.png"
+                class="w-[85vw] sm:w-[50vw] md:max-w-md"
+                alt="home"
+              />
             </span>
           </h1>
           <div
@@ -67,61 +69,36 @@
             {@html t(
               `
             <div class="text-brand-primary">
-            Comment atteindre nos objectifs ?
+              Une qualité de service hors paire !
             </div>
-            <div class="mt-2">
-            <div class="mt-2 sm:mt-1 text-[0.9rem]">
-            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-            En rachetant le plus de PME que possible
-            </div>
-            <div class="mt-2 sm:mt-1 text-[0.9rem]">
-            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-            En investissant dans les médias : pancartes, affiches dans les metros,
-            rues, stations de train, bus…
-            </div>
-            <div class="mt-2 sm:mt-1 text-[0.9rem]">
-            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-            En investissant dans les réseaux sociaux cibles : facebook, youtube,
-            twitter, instagram…
+
+            <div class="mt-2 text-justify">
+              Fatigué du vieux nettoyage ordinaire ? Améliorez votre espace de vie grâce à notre service de nettoyage de maison exceptionnel. Nous ne sommes pas que des nettoyeurs, nous sommes des artisans de la propreté, transformant votre maison en un sanctuaire immaculé.
+            <br/>
+            <br/>
+              Notre attention méticuleuse aux détails et notre engagement indéfectible envers la qualité garantissent une expérience inégalée. 
             </div>
               `,
               `
             <div class="text-brand-primary">
-            How do we achieve our goals?
+              Unparalleled quality of service!
             </div>
+
             <div class="mt-2">
-            <div class="mt-2 sm:mt-1 text-[0.9rem]">
-            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-            By buying as many SMEs as possible
-            </div>
-            <div class="mt-2 sm:mt-1 text-[0.9rem]">
-            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-            By investing in the media: signs, posters in metros,
-            streets, train stations, buses…
-            </div>
-            <div class="mt-2 sm:mt-1 text-[0.9rem]">
-            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-            By investing in target social networks: Facebook, YouTube,
-            twitter, instagram...
+              Tired of the same old, mundane clean? Elevate your living space with our exceptional house cleaning service. We’re not just cleaners; we’re artisans of cleanliness, transforming your home into a pristine sanctuary. 
+            <br/>
+            <br/>
+              Our meticulous attention to detail and unwavering commitment to quality ensure an unparalleled experience. 
             </div>`,
               `
             <div class="text-brand-primary">
-            ¿Cómo podemos lograr nuestros objetivos?
+              ¡Calidad de servicio incomparable!
             </div>
             <div clase="mt-2">
-            <div class="mt-2 sm:mt-1 text-[0.9rem]">
-            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-            Comprando tantas PYME como sea posible
-            </div>
-            <div class="mt-2 sm:mt-1 text-[0.9rem]">
-            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-            Invirtiendo en los medios: carteles, carteles en los metros,
-            calles, estaciones de tren, autobuses…
-            </div>
-            <div class="mt-2 sm:mt-1 text-[0.9rem]">
-            <span class="material-symbols-outlined text-xs mr-1"> ⚪ </span>
-            Invirtiendo en redes sociales objetivo: Facebook, YouTube,
-            twitter, instagram...
+              ¿Cansado de la misma limpieza de siempre? Mejore su espacio vital con nuestro excepcional servicio de limpieza del hogar. No somos solo limpiadores; somos artesanos de la limpieza, transformando su hogar en un santuario impecable.
+              <br/>
+              <br/>
+              Nuestra meticulosa atención a los detalles y nuestro compromiso inquebrantable con la calidad garantizan una experiencia incomparable.
             </div>
               `,
             )}

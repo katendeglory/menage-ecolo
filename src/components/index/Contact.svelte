@@ -9,12 +9,12 @@
   >
     <Container>
       <div class="mb-2">
-        <span
-          class="flex items-center justify-center text-6xl sm:text-8xl h-font drop-shadow-lg"
-        >
-          <!-- <img src="/images/favicon.png" class="w-10 mr-2" alt="home" /> -->
-          <span class="text-brand-white">menag </span>
-          <span class="text-brand-primary">ecolo</span>
+        <span class="flex items-center justify-center mb-8">
+          <img
+            src="/banner-white.png"
+            class="w-[85vw] sm:w-[50vw] md:max-w-md"
+            alt="home"
+          />
         </span>
 
         <div
