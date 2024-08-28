@@ -7,7 +7,6 @@
   import Container from "../components/utils/Container.svelte";
   import t from "../utils/t";
 
-  // Remove Corresponding Object field when Category is chosen
   let FACTURE = {
     userLang: localStorage.getItem("lang"),
     type: "",
