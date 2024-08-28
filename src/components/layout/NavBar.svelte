@@ -95,8 +95,7 @@
 
         <div class="hidden lg:flex items-center">
           <a
-            href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
-            target="_blank"
+            href="/quote"
             class="!text-base h-font btn btn-secondary !px-4 !py-1 mr-2 !text-white"
           >
             {t(
@@ -216,11 +215,7 @@
           {t("Méthode", "Method", "Método")}
         </a>
 
-        <a
-          class="side-btn col-span-full !bg-brand-primary"
-          href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
-          target="_blank"
-        >
+        <a class="side-btn col-span-full !bg-brand-primary" href="/quote">
           {t(
             "Demander Une Quotation",
             "Request a Quote",

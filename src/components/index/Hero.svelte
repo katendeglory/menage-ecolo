@@ -61,8 +61,7 @@
             <div class="wrd-container w-full flex items-center justify-center">
               <span class="!w-full">
                 <a
-                  href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
-                  target="_blank"
+                  href="/quote"
                   class="btn btn-secondary h-font !text-xl !px-10 tracking-widest !w-full"
                 >
                   {t(

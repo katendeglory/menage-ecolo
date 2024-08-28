@@ -85,7 +85,7 @@
             </div>
 
             <div class="mt-2">
-              Tired of the same old, mundane clean? Elevate your living space with our exceptional house cleaning service. We’re not just cleaners; we’re artisans of cleanliness, transforming your home into a pristine sanctuary. 
+              Tired of the same old, mundane clean? Elevate your living space with our exceptional house cleaning service. We're not just cleaners; we're artisans of cleanliness, transforming your home into a pristine sanctuary. 
             <br/>
             <br/>
               Our meticulous attention to detail and unwavering commitment to quality ensure an unparalleled experience. 
@@ -106,8 +106,7 @@
 
           <div class="flex items-center">
             <a
-              href="https://api.whatsapp.com/send?phone=+14389302992&text=Hello+Menage+Ecolo"
-              target="_blank"
+              href="/quote"
               class="btn btn-secondary h-font tracking-wider !bg-[#000000] !py-2 text-xl !text-gray-300 !border-0"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"

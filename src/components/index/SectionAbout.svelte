@@ -234,7 +234,7 @@
       `,
       `
       <div class="text-center">
-      "Cleanliness is a luxury within everyone’s reach"
+      "Cleanliness is a luxury within everyone's reach"
       <span class="text-center text-brand-primary hidden md:inline">
       — Diane de Beausacq.
       </span>

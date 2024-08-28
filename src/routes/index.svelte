@@ -10,9 +10,9 @@
 <svelte:head>
   <title>
     {t(
-      `Acceuil - Ménage Écolo - La propreté est un luxe à la portée de tout le monde`,
-      "Home - Ménage Écolo - La limpieza es un lujo al alcance de todos.",
-      "Hogar - Ménage Écolo - Cleanliness is a luxury within everyone’s reach",
+      `Acceuil - Ménage Écolo - La propreté est un luxe à la portée de tout le monde.`,
+      "Home - Ménage Écolo - Cleanliness is a luxury within everyone's reach.",
+      "Hogar - Ménage Écolo - La limpieza es un lujo al alcance de todos.",
     )}
   </title>
 </svelte:head>
