@@ -7,9 +7,12 @@
   import Container from "../components/utils/Container.svelte";
   import t from "../utils/t";
 
-  let FACTURE = {
+  const defaultFACTURE = {
+    // Meta
     userLang: localStorage.getItem("lang"),
     type: "",
+    frequence: "",
+    // Prices
     text: {
       studios: "",
       maison: "",
@@ -22,7 +25,10 @@
       extraRegulier: [],
       extraGros: [],
     },
+    // Client
   };
+
+  let FACTURE = { ...defaultFACTURE };
 
   let categoriesLang = {
     fr: [
@@ -179,22 +185,22 @@
 
   let frequenceLang = {
     fr: [
-      { value: "1", label: "Une fois" },
-      { value: "2", label: "Hebdomadairement" },
-      { value: "3", label: "Toutes les 2 semaines" },
-      { value: "4", label: "Mensuellement" },
+      { value: "0", label: "Une fois" },
+      { value: "1", label: "Hebdomadairement" },
+      { value: "2", label: "Toutes les 2 semaines" },
+      { value: "3", label: "Mensuellement" },
     ],
     en: [
-      { value: "1", label: "One Time" },
-      { value: "2", label: "Weeklu" },
-      { value: "3", label: "Bi-Weekly" },
-      { value: "4", label: "Monthly" },
+      { value: "0", label: "One Time" },
+      { value: "1", label: "Weeklu" },
+      { value: "2", label: "Bi-Weekly" },
+      { value: "3", label: "Monthly" },
     ],
     es: [
-      { value: "1", label: "Una vez" },
-      { value: "2", label: "Semanal" },
-      { value: "3", label: "Cada 2 semanas" },
-      { value: "4", label: "Mensual" },
+      { value: "0", label: "Una vez" },
+      { value: "1", label: "Semanal" },
+      { value: "2", label: "Cada 2 semanas" },
+      { value: "3", label: "Mensual" },
     ],
   };
 
@@ -312,11 +318,15 @@
         FACTURE.text.extraGros = texts;
         FACTURE.prices.extraGros = prices;
       }
+
+      // "frequence"
+      if (booking.frequence) {
+        FACTURE.frequence = frequenceLang.fr[booking.frequence].label;
+      }
     }
   }
 
-  let booking = {
-    categorie: "",
+  const defaultBooking = {
     studios: "",
     maison: "",
     extraRegulier: [],
@@ -334,10 +344,12 @@
     // ..................................
     // instruction: "", //
     // ..................................
-    // frequence: "", //
+    frequence: "",
     // More...
     // categorieDesc: "",
   };
+
+  let booking = { categorie: "", ...defaultBooking };
 
   let loading = false;
 
@@ -405,6 +417,11 @@
               placeholder="Veuillez Selectioner..."
               items={categories}
               on:select={(e) => {
+                // Reset defaults when changing the type...
+                booking = { ...defaultBooking };
+                FACTURE = { ...defaultFACTURE };
+
+                // Set values now...
                 booking.categorie = e.detail.value;
                 booking.categorieDesc = e.detail.desc;
                 FACTURE.type = booking.categorie;
@@ -496,17 +513,6 @@
               </div>
             {/if}
 
-            <input
-              type="text"
-              bind:value={booking.name}
-              placeholder="Nom Complet"
-            />
-
-            <input type="text" bind:value={booking.email} placeholder="Email" />
-            <input type="text" bind:value={booking.email} placeholder="Email" />
-            <input type="text" bind:value={booking.email} placeholder="Email" />
-            <input type="text" bind:value={booking.email} placeholder="Email" />
-
             <!--  -->
             <h2>Frequence:</h2>
             <div class="-mt-4 grid grid-cols-1 select-item-1">
@@ -518,6 +524,17 @@
                 }}
               />
             </div>
+
+            <input
+              type="text"
+              bind:value={booking.name}
+              placeholder="Nom Complet"
+            />
+
+            <input type="text" bind:value={booking.email} placeholder="Email" />
+            <input type="text" bind:value={booking.email} placeholder="Email" />
+            <input type="text" bind:value={booking.email} placeholder="Email" />
+            <input type="text" bind:value={booking.email} placeholder="Email" />
           {:else}
             <div class="-mt-14 flex items-center justify-center">
               <img src="/favicon.png" class="h-28 md:h-32 mr-2" alt="home" />
@@ -526,11 +543,12 @@
 
           {#if !loading}
             <button
+              disabled
               class="!py-1 !rounded-md btn btn-secondary !h-min"
               style="width: 100%;"
               on:click={handleSubmit}
             >
-              Reserver
+              Reserver (⚠ En TRAVAUX)
               <span class="material-symbols-outlined ml-2 text-3xl">
                 trending_flat
               </span>
@@ -547,7 +565,7 @@
             </button>
           {/if}
         </div>
-        <div class="--hidden bg-gray-900 text-gray-300 ml-4 rounded-md p-2">
+        <div class="hidden bg-gray-900 text-gray-300 ml-4 rounded-md p-2">
           <!-- <pre class="overflow-auto">{JSON.stringify(booking, null, 4)}</pre> -->
           <pre class="overflow-auto mt-4">{JSON.stringify(
               FACTURE,
