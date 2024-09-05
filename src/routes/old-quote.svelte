@@ -277,7 +277,7 @@
   });
 
   $: {
-    // 🟥🟥🟥 RESETTER : HERE 🟥🟥🟥
+    // 🟥🟥🟥 RESETTER 🟥🟥🟥
     TOTAL = 0;
     formattedPrices = [];
 
@@ -431,7 +431,7 @@
           loading = false;
           console.log("SUCCESS!", response.status, response.text);
           alert(`✅ Thank you for the message, We'll get back to you!`);
-          // 🟥🟥🟥 RESETTER : HERE 🟥🟥🟥
+          // 🟥🟥🟥 RESETTER 🟥🟥🟥
           booking = { categorie: "", ...defaultBooking };
           TOTAL = 0;
           FACTURE = { ...defaultFACTURE };
@@ -485,7 +485,7 @@
               placeholder="..."
               items={categories}
               on:select={(e) => {
-                // 🟥🟥🟥 RESETTER : HERE 🟥🟥🟥
+                // 🟥🟥🟥 RESETTER 🟥🟥🟥
                 booking = { ...defaultBooking };
                 FACTURE = { ...defaultFACTURE };
                 FACTURE.text.maison = "";
