@@ -286,16 +286,13 @@
     if (categorie) {
       // "studios" : price depends on category
       if (booking.studios) {
-        FACTURE.text.studios =
-          "chambre(s): " +
-          studioLang[localStorage.getItem("lang")][booking.studios];
+        FACTURE.text.studios = "chambre(s): " + studioLang.fr[booking.studios];
         FACTURE.prices.studios = tarifStudio[categorie][booking.studios];
       }
 
       // "maison"
       if (booking.maison) {
-        FACTURE.text.maison =
-          maisonLang[localStorage.getItem("lang")][booking.maison];
+        FACTURE.text.maison = maisonLang.fr[booking.maison];
         FACTURE.prices.maison = tarifMaison[booking.maison];
       }
 
@@ -305,7 +302,7 @@
         let prices = [];
 
         booking.extraRegulier.forEach((extra) => {
-          texts.push(extraRegulierLang[localStorage.getItem("lang")][extra]);
+          texts.push(extraRegulierLang.fr[extra]);
           prices.push(tarifExtraRegulier[extra]);
         });
 
@@ -319,7 +316,7 @@
         let prices = [];
 
         booking.extraGros.forEach((extra) => {
-          texts.push(extraGrosLang[localStorage.getItem("lang")][extra]);
+          texts.push(extraGrosLang.fr[extra]);
           prices.push(tarifExtraGros[extra]);
         });
 
@@ -329,8 +326,7 @@
 
       // "frequence"
       if (booking.frequence) {
-        FACTURE.frequence =
-          frequenceLang[localStorage.getItem("lang")][booking.frequence].label;
+        FACTURE.frequence = frequenceLang.fr[booking.frequence].label;
       }
 
       let line1 = [

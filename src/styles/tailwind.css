@@ -90,7 +90,7 @@ select:focus, input[type="datetime-local"]:focus, input[type="text"]:focus, inpu
 
 *::placeholder {
   font-family: inherit !important;
-  @apply text-gray-300 text-sm !important;
+  @apply text-gray-400 text-sm !important;
 }
 
 *:focus {
