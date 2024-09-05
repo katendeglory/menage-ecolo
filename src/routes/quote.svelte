@@ -403,6 +403,28 @@
     //   }
     // }
 
+    if (!booking.tel) {
+      alert(
+        t(
+          `Veuillez remplir le champ telephone`,
+          `Please fill in the telephone field`,
+          `Por favor rellene el campo de teléfono`,
+        ),
+      );
+      return;
+    }
+
+    if (!booking.email) {
+      alert(
+        t(
+          `Veuillez remplir le champ email`,
+          `Please fill in the email field`,
+          `Por favor rellene el campo de email`,
+        ),
+      );
+      return;
+    }
+
     loading = true;
 
     // ..................................
