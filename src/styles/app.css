@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500&display=swap&family=Manrope:wght@200..800&display=swap&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-html {
+html, .cc-window * {
   /* scroll-behavior: smooth; */
   width: 100%;
   /* font-family: 'Montserrat', sans-serif !important; */
@@ -33,6 +33,41 @@ body {
 .manrope {
   font-family: "Manrope", sans-serif !important;
 }
+
+/* Cookies */
+.cc-window {
+  border-radius: 10px;
+}
+
+.cc-window a {
+  color: #388e3c !important;
+}
+
+#cc-btn-accept, #cc-btn-reject {
+  border-radius: 5px;
+  font-weight: 300 !important;
+  border: 0 !important;
+  color: #fff !important;
+  margin: 10px 2px 0px !important;
+}
+
+.cc-window-title {
+  padding: 10px 10px 0px !important;
+}
+
+.cc-window-message {
+  padding: 5px 10px 10px !important;
+}
+
+#cc-btn-accept {
+  background-color: #388e3c !important;
+}
+
+#cc-btn-reject {
+  background-color: #8e3838 !important;
+}
+
+/* End cookies */
 
 .animate-character {
   text-transform: uppercase;

@@ -32,14 +32,14 @@
           class="!w-full shadow-md btn !bg-brand-black !px-4 !py-1 !capitalize"
           on:click={() => setLang("fr")}
         >
-          <span class="fi fi-fr mr-2 text-base" />
+          <img src="/quebec.svg" class="w-[1.4rem] mr-2" alt="quebec" />
           Français
         </button>
         <button
           class="!w-full shadow-md btn !bg-brand-black !px-4 !py-1 !capitalize"
           on:click={() => setLang("en")}
         >
-          <span class="fi fi-gb mr-2 text-base" />
+          <span class="fi fi-ca mr-2 text-base" />
           English
         </button>
         <button
