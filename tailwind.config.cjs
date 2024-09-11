@@ -1,8 +1,3 @@
-// rgb(218,28,92)
-// #133b6e
-// hsl(340, 77%, 48%)
-// rgb(16, 185, 129)
-
 module.exports = {
   content: ['./src/**/*.svelte'],
   theme: {
