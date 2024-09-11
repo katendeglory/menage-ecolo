@@ -13,7 +13,6 @@ module.exports = {
         "brand-white-light": "#f0f0f0",
         // .....................
         "brand-black": "#212121",
-
       },
     },
   },
