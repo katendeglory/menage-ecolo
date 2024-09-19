@@ -6,11 +6,10 @@
 <div id="contact"></div>
 
 <div class="relative showcase bg-white contact-bg">
-  <div
-    class="content flex items-center text-gray-800 h-[90vh] pt-14 pb-4 md:pt-0 md:pb-0"
-  >
+  <!-- class="content flex items-center text-gray-800 h-[90vh] pt-14 pb-4 md:pt-0 md:pb-0" -->
+  <div class="content flex items-center justify-center text-gray-800 h-[90vh]">
     <Container>
-      <div class="mb-2">
+      <div>
         <span class="flex items-center justify-center">
           <img
             src="/favicon.png"
