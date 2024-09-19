@@ -83,14 +83,14 @@
 
 <div
   id="header"
-  class="bg-white navbar text-gray-800 fixed top-0 left-0 w-full z-50 transition-all
+  class="bg-[#111111] navbar text-gray-300 fixed top-0 left-0 w-full z-50 transition-all
     duration-250"
 >
   <Container overflowHidden={false}>
     <div id="inner-header" class="h-16 sm:h-32 transition-all duration-500">
       <div class="h-1/2 hidden sm:flex justify-between items-center">
         <a class="flex items-center" href="/#home">
-          <img src="/favicon.png" class="w-14 mr-2" alt="home" />
+          <img src="/favicon-white.png" class="w-14 mr-2" alt="home" />
         </a>
 
         <div class="hidden lg:flex items-center">
@@ -109,7 +109,7 @@
           </a>
           <a
             href="/#contact"
-            class="!text-base !bg-brand-white-light h-font btn btn-white !px-4 !py-1"
+            class="!text-base h-font btn btn-white !px-4 !py-1"
           >
             {t("Nous Contacter", "Contact Us", "Contáctenos")}
             <span class="material-symbols-outlined text-2xl ml-2">
@@ -128,7 +128,7 @@
         </a>
 
         <span class="flex items-center sm:hidden">
-          <img src="/favicon.png" class="h-10 mr-2" alt="home" />
+          <img src="/banner-white.png" class="h-10 mr-2" alt="home" />
         </span>
 
         <div class="hidden lg:flex text-[0.9rem]">
@@ -174,7 +174,7 @@
     transition:fly={{ duration: 400, x: 500 }}
   >
     <div
-      class="py-4 px-3 text-sm absolute right-0 top-0 bottom-0 bg-white w-[90vw] sm:w-[26rem] patterns"
+      class="py-4 px-3 text-sm absolute right-0 top-0 bottom-0 bg-[#111111] w-[90vw] sm:w-[26rem] patterns"
     >
       <div class="grid grid-cols-2 gap-2">
         <a class="side-btn" href="/#home">
@@ -215,10 +215,7 @@
           {t("Méthode", "Method", "Método")}
         </a>
 
-        <a
-          class="side-btn col-span-full !bg-brand-primary !text-white"
-          href="/quote"
-        >
+        <a class="side-btn col-span-full !bg-brand-primary" href="/quote">
           {t(
             "Demander Une Quotation",
             "Request a Quote",
@@ -245,7 +242,7 @@
         class="mt-4 flex items-center justify-between space-x-2 !text-gray-50"
       >
         <span class="flex items-center text-3xl sm:text-4xl h-font">
-          <img src="/favicon.png" class="h-14 mr-2" alt="home" />
+          <img src="/banner-white.png" class="h-14 mr-2" alt="home" />
         </span>
 
         <!-- <a target="blank" href="/#home">
