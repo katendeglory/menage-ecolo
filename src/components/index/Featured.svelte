@@ -52,14 +52,14 @@
           >
             <span class="flex items-center">
               <img
-                src="/banner-white.png"
-                class="w-[85vw] sm:w-[50vw] md:max-w-md"
+                src="/favicon-white.png"
+                class="h-[30vh] sm:h-[35vh] md:max-h-md"
                 alt="home"
               />
             </span>
           </h1>
           <div
-            class="mb-5 text-gray-300 tracking-normal"
+            class="mb-5 text-gray-300 tracking-normal text-sm sm:text-base"
             data-aos="fade-right"
             data-aos-easing="ease-in-sine"
             data-aos-offset="200"

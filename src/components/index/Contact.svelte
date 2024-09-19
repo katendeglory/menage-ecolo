@@ -11,8 +11,8 @@
       <div class="mb-2">
         <span class="flex items-center justify-center mb-8">
           <img
-            src="/banner-white.png"
-            class="w-[85vw] sm:w-[50vw] md:max-w-md"
+            src="/favicon-white.png"
+            class="h-[50vh] sm:h-[50vh] md:max-h-md"
             alt="home"
           />
         </span>

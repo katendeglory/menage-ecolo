@@ -128,7 +128,7 @@
         </a>
 
         <span class="flex items-center sm:hidden">
-          <img src="/banner-white.png" class="h-10 mr-2" alt="home" />
+          <img src="/favicon-white.png" class="h-10 mr-2" alt="home" />
         </span>
 
         <div class="hidden lg:flex text-[0.9rem]">
@@ -242,7 +242,7 @@
         class="mt-4 flex items-center justify-between space-x-2 !text-gray-50"
       >
         <span class="flex items-center text-3xl sm:text-4xl h-font">
-          <img src="/banner-white.png" class="h-14 mr-2" alt="home" />
+          <img src="/favicon-white.png" class="h-14 mr-2" alt="home" />
         </span>
 
         <!-- <a target="blank" href="/#home">
