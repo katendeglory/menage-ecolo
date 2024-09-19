@@ -71,8 +71,8 @@
     <div class="absolute bottom-2 left-0 w-full">
       <Container>
         <div class="h-font flex items-center justify-between md:justify-start">
-          <div>&copy; 2024</div>
-          <a
+          <div>&copy; Tous droits réservés Ménage Ecolo - 2024</div>
+          <!-- <a
             class="md:whitespace-nowrap ml-2 text-right flex items-center"
             target="_blank"
             href="https://glorykatende.com"
@@ -81,7 +81,7 @@
             <span class="material-symbols-outlined text-3xl ml-1">
               trending_flat
             </span>
-          </a>
+          </a> -->
         </div>
       </Container>
     </div>
