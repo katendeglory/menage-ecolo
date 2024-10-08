@@ -40,6 +40,30 @@
               )}
             </div>
 
+            <div class="mt-4 flex items-center justify-center space-x-1">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61566358925143"
+              >
+                <ion-icon
+                  class="text-2xl text-brand-primary mr-4"
+                  name="logo-facebook"
+                />
+              </a>
+              <a target="_blank" href="https://www.tiktok.com/@menage.ecolo">
+                <ion-icon
+                  class="text-2xl text-brand-primary mr-4"
+                  name="logo-tiktok"
+                />
+              </a>
+              <a target="_blank" href="https://www.instagram.com/menage.ecolo">
+                <ion-icon
+                  class="text-2xl text-brand-primary mr-0"
+                  name="logo-instagram"
+                />
+              </a>
+            </div>
+
             <div class="mt-2 flex items-center justify-center">
               <div>&copy; Tous droits réservés Ménage Ecolo - 2024</div>
             </div>

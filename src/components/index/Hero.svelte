@@ -90,6 +90,36 @@
               </span>
             </div>
           </div>
+
+          <!-- Social Links -->
+          <div class="wrd-container">
+            <span class="mt-6 flex items-center justify-center space-x-1">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61566358925143"
+              >
+                <!-- <img src="/images/fb.png" class="w-12" alt="" /> -->
+                <ion-icon
+                  class="text-2xl text-brand-primary mr-4"
+                  name="logo-facebook"
+                />
+              </a>
+              <a target="_blank" href="https://www.tiktok.com/@menage.ecolo">
+                <ion-icon
+                  class="text-2xl text-brand-primary mr-4"
+                  name="logo-tiktok"
+                />
+                <!-- <img src="/images/tt.png" class="w-12" alt="" /> -->
+              </a>
+              <a target="_blank" href="https://www.instagram.com/menage.ecolo">
+                <ion-icon
+                  class="text-2xl text-brand-primary mr-0"
+                  name="logo-instagram"
+                />
+                <!-- <img src="/images/ig.png" class="w-12" alt="" /> -->
+              </a>
+            </span>
+          </div>
         </Container>
       </div>
     </div>

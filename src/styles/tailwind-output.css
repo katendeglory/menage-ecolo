@@ -667,9 +667,6 @@ select {
 .ml-2 {
   margin-left: 0.5rem;
 }
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -702,6 +699,18 @@ select {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.mr-4 {
+  margin-right: 1rem;
+}
+.mr-0 {
+  margin-right: 0px;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .flex {
   display: flex;
@@ -798,6 +807,9 @@ select {
 .w-\[8rem\] {
   width: 8rem;
 }
+.w-12 {
+  width: 3rem;
+}
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -890,6 +902,11 @@ select {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .overflow-auto {
   overflow: auto;
