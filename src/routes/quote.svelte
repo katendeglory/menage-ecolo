@@ -479,9 +479,9 @@
 <svelte:head>
   <title>
     {t(
-      `Cotation - Ménage Écolo - La propreté est un luxe à la portée de tout le monde.`,
-      "Quotation - Ménage Écolo - Cleanliness is a luxury within everyone's reach.",
-      "Presupuesto - Ménage Écolo - La limpieza es un lujo al alcance de todos.",
+      `Cotation - Ménage Écolo - Proprement Vert.`,
+      "Quotation - Ménage Écolo - Properly Green.",
+      "Presupuesto - Ménage Écolo - Correctamente verde.",
     )}
   </title>
 </svelte:head>

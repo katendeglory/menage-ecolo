@@ -44,12 +44,13 @@
               <span></span>
               <span></span>
               <span></span>
-              <span>« {t("La propreté", "Cleanliness", "La limpieza")} </span>
-              <span>{t("est", "is", "es")} </span>
-              <span>{t("un luxe", "a luxury", "un lujo")}</span>
-              <span>{t("à la portée", "within", "al alcance")}</span>
-              <span>{t("de tout", "everyone's", "de")} </span>
-              <span>{t(" le monde", "reach", "todos.")} »</span>
+              <span>« </span>
+              <span>{t("Proprement", "Properly", "Correctamente")} </span>
+              <span></span>
+              <span></span>
+              <span>{t("vert", "green", "verde")} </span>
+              <span></span>
+              <span>»</span>
               <span></span>
               <span></span>
             </div>

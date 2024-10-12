@@ -22,23 +22,23 @@
           <div
             class="text-gray-800 text-sm md:text-base text-center flex flex-col items-center"
           >
-            <a
-              href="tel:+1438-930-2992"
-              class="contact-box flex items-center !text-brand-primary"
-            >
-              <span class="material-symbols-outlined mr-2 text-3xl">
-                phone_callback
-              </span>
-              +1 438-930-2992
-            </a>
-
-            <div class="mt-2 flex items-center justify-center">
+            <div class="flex items-center justify-center">
               {t(
                 "« Propre pour vous, sain pour la planète »",
                 "« Clean for you, healthy for the planet »",
                 "« Limpio para ti, saludable para el planeta »",
               )}
             </div>
+
+            <a
+              href="tel:+1819-719-3464"
+              class="mt-2 contact-box flex items-center !text-brand-primary"
+            >
+              <span class="material-symbols-outlined mr-2 text-3xl">
+                phone_callback
+              </span>
+              +1 819-719-3464
+            </a>
 
             <div class="mt-4 flex items-center justify-center space-x-1">
               <a
@@ -64,7 +64,7 @@
               </a>
             </div>
 
-            <div class="mt-2 flex items-center justify-center">
+            <div class="mt-2 flex items-center justify-center text-sm italic">
               <div>&copy; Tous droits réservés Ménage Ecolo - 2024</div>
             </div>
           </div>
