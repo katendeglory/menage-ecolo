@@ -22,8 +22,6 @@
 	<!-- https://www.iso.org/obp/ui/#search -->
 	<!--  -->
 
-	<!-- New Domain -->
-	
 	<!--
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js" ></script>
@@ -61,6 +59,19 @@
 
 <body>
 	<div id="svelte">%svelte.body%</div>
+
+	<!-- Ce site fait confiance à Leadfox pour convertir ses visiteurs en clients - https://leadfox.co/fr/ -->
+	<script>
+	(function() {
+	var el = document.createElement("script");
+	el.setAttribute("defer", "");
+	el.setAttribute("src", "//app.leadfox.co/js/api/leadfox.js");
+	el.setAttribute("data-key", "5e466d61d3ae9713754a1785f99f9048");
+	
+	document.head.appendChild(el);
+	})();
+	</script>
+	<!-- Leadfox -->
 </body>
 
 
